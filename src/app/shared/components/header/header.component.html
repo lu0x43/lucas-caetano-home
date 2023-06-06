@@ -1,0 +1,21 @@
+<div class="w-screen h-max relative">
+  <div class="w-screen h-auto bg-gradient-to-r from-purple-1 to-purple">
+    <img src="/assets/icons/bg-initial.png" />
+  </div>
+  <div class="flex w-full justify-end pt-8 pr-8 xs:pr-3 xs:pt-3 top-0 absolute">
+    <button
+      (click)="changeLang()"
+      class="bg-white p-0.5 rounded-2 hover:shadow-center"
+    >
+      <img
+        [src]="
+          '/assets/icons/country-flag/' +
+          translateService.currentLang +
+          '-flag.png'
+        "
+        width="22px"
+        height="auto"
+      />
+    </button>
+  </div>
+</div>

@@ -51,13 +51,18 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      purple: {
+        DEFAULT: "#CB6CE6",
+        1: "#004AAD",
+        2: "#A10DCB",
+      },
       blue: {
         DEFAULT: "#053768",
-        1: "#05376899",
+        1: "#3D5A91",
         2: "#9BAFC3",
         3: "#CDD7E1",
         4: "#ECF0F3",
-        5: '#347FC7'
+        5: "#347FC7",
       },
       yellow: {
         DEFAULT: "#FDC600",
@@ -72,34 +77,34 @@ module.exports = {
       green: {
         DEFAULT: "#95C11F",
         1: "#7e9934",
-        2: '#27AE60',
-        3: '#40CD28'
+        2: "#27AE60",
+        3: "#40CD28",
       },
       red: {
         DEFAULT: "#C11F1F",
         1: "#EE5B4A",
-        2: '#C0392B'
+        2: "#C0392B",
       },
       black: "#000000",
       white: "#FFFFFF",
       gray: {
-        '1': '#484848',
-        '2': '#737373',
-        '3': '#F6F6F6',
-        '4': '#a7a7a7',
-        '5': '#E4E4E4',
-        '6': '#535353',
-        '7': '#F1F2F8',
-        '8': '#63656A',
-        '9': '#D1D1D1',
-        '10': '#9F9F9F',
-        '11': '#C4C4C4',
-        '12': '#878787',
-        '13': '#F0F2F5',
-        '14': '#585858',
-        '15': '#C7C7C7',
-        '16': '#DCDCDC',
-        '17': '#3B3B3D'
+        1: "#484848",
+        2: "#737373",
+        3: "#F6F6F6",
+        4: "#a7a7a7",
+        5: "#E4E4E4",
+        6: "#535353",
+        7: "#F1F2F8",
+        8: "#63656A",
+        9: "#D1D1D1",
+        10: "#9F9F9F",
+        11: "#C4C4C4",
+        12: "#878787",
+        13: "#F0F2F5",
+        14: "#585858",
+        15: "#C7C7C7",
+        16: "#DCDCDC",
+        17: "#3B3B3D",
       },
       orange: {
         DEFAULT: "#F18700",
@@ -134,7 +139,7 @@ module.exports = {
       side: "4px 4px 16px 0px rgba(0, 0, 0, 0.1)",
       footer: "0px -4px 8px 0px rgba(170, 170, 170, 0.1)",
       inferior: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-      'center': '0px 1px 4px rgba(0, 0, 0, 0.15)'
+      center: "0px 1px 4px rgba(0, 0, 0, 0.15)",
     },
     borderRadius: {
       none: "0",
