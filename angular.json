@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "caetano-home": {
+    "lucas-caetano-home": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist-caetano-home",
+            "outputPath": "dist/lucas-caetano-home",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "caetano-home:build:production"
+              "browserTarget": "lucas-caetano-home:build:production"
             },
             "development": {
-              "browserTarget": "caetano-home:build:development"
+              "browserTarget": "lucas-caetano-home:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "caetano-home:build"
+            "browserTarget": "lucas-caetano-home:build"
           }
         },
         "test": {
