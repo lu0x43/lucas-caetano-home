@@ -35,19 +35,39 @@
             </a>
           </div>
         </div>
+
         <div class="flex flex-col flex-1 gap-2">
           <div class="self-center">
             {{ 'FOOTER.SOCIAL' | translate }}
           </div>
 
           <div class="flex flex-col items-center gap-1">
-            <div>
-              {{ 'FOOTER.LINKEDIN' | translate }}
+            <div class="flex flex-row gap-2">
+              <a
+                [href]="info.linkedin"
+                target="_blank"
+                class="hover:text-purple-1"
+              >
+                {{ 'FOOTER.LINKEDIN' | translate }}
+              </a>
             </div>
-            <div>
-              {{ 'FOOTER.GITHUB' | translate }}
+
+            <div class="flex flex-row gap-2">
+              <a
+                [href]="info.github"
+                target="_blank"
+                class="hover:text-purple-1"
+              >
+                {{ 'FOOTER.GITHUB' | translate }}
+              </a>
             </div>
-            <div>
+
+            <div class="flex flex-row gap-2">
+              <!-- <a
+                [href]="info.instagram"
+                target="_blank"
+              >
+              </a> -->
               {{ 'FOOTER.INSTAGRAM' | translate }}
             </div>
           </div>
