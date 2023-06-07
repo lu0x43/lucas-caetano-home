@@ -1,0 +1,65 @@
+<div class="w-screen h-60 bottom-0 shadow-top bg-blue">
+  <ng-container>
+    <div class="h-full flex flex-col justify-center items-center py-4 px-12">
+      <div class="h-full text-sm text-white font-600">
+        {{ 'FOOTER.CONTACT' | translate }}
+      </div>
+
+      <div
+        class="flex flex-row justify-between items-end xs:w-full md:w-2/3 text-white text-sm"
+      >
+        <div class="flex flex-col items-center flex-1 gap-1">
+          <div class="flex flex-row gap-2">
+            <a
+              [href]="'https://wa.me/' + info.whatsapp"
+              target="_blank"
+              class="hover:text-purple-1"
+            >
+              {{ 'FOOTER.WHATSAPP' | translate }}
+            </a>
+          </div>
+
+          <div class="flex flex-row gap-2">
+            {{ 'FOOTER.PHONE' | translate }}:
+            {{ info.phone }}
+          </div>
+
+          <div class="flex flex-row gap-2">
+            {{ 'FOOTER.EMAIL' | translate }}:
+            <a
+              [href]="'mailto:' + info.email"
+              class="hover:text-purple-1"
+              target="_blank"
+            >
+              {{ info.email }}
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 gap-2">
+          <div class="self-center">
+            {{ 'FOOTER.SOCIAL' | translate }}
+          </div>
+
+          <div class="flex flex-col items-center gap-1">
+            <div>
+              {{ 'FOOTER.LINKEDIN' | translate }}
+            </div>
+            <div>
+              {{ 'FOOTER.GITHUB' | translate }}
+            </div>
+            <div>
+              {{ 'FOOTER.INSTAGRAM' | translate }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-full flex justify-center border border-white">
+        <div class="text-xs text-gray-2 self-end">
+          ©
+          {{ 'FOOTER.COPYRIGHT' | translate }}
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from 'src/app/core/services/authenticator/authservice.service';
 
@@ -7,7 +7,7 @@ import { AuthService } from 'src/app/core/services/authenticator/authservice.ser
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   toggleMenu = false;
 
   constructor(
@@ -24,4 +24,6 @@ export class HeaderComponent {
       this.authenticationService.changeLang('en');
     }
   }
+
+  ngOnInit(): void {}
 }

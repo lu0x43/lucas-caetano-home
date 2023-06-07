@@ -140,6 +140,7 @@ module.exports = {
       footer: "0px -4px 8px 0px rgba(170, 170, 170, 0.1)",
       inferior: "0px 4px 4px rgba(0, 0, 0, 0.25)",
       center: "0px 1px 4px rgba(0, 0, 0, 0.15)",
+      top: "0px -4px 4px rgba(0, 0, 0, 0.25)",
     },
     borderRadius: {
       none: "0",
