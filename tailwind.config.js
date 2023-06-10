@@ -137,6 +137,10 @@ module.exports = {
       extrabold: 800,
       black: 900,
     },
+    fontStyle: {
+      normal: "normal",
+      italic: "italic",
+    },
     boxShadow: {
       none: "none",
       DEFAULT: "4px 4px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -177,14 +181,5 @@ module.exports = {
       padding: "3.5rem",
     },
   },
-  plugins: [
-    // require("@tailwindcss/line-clamp"),
-    // require("./src/scss/plugins/color-variables")({
-    //   className: "btn",
-    //   variable: "btn-color",
-    // }),
-    // require("tailwind-css-variables")({
-    //   colors: "color",
-    // }),
-  ],
+  plugins: [],
 };
