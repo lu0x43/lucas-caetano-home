@@ -1,10 +1,33 @@
 <div class="w-screen h-max relative">
   <div
-    class="w-screen h-auto flex justify-center bg-gradient-to-r from-purple-1 to-purple"
+    class="w-screen xs:h-28 md:h-80 flex justify-center bg-gradient-to-r from-purple-1 to-purple"
   >
-    <img src="/assets/icons/bg-initial.png" />
+    <!-- <img src="/assets/icons/bg-initial.png" /> -->
+    <div
+      class="flex flex-col justify-center self-center xs:w-14 xs:h-14 md:w-44 md:h-44 bg-gradient-to-r from-purple-2 to-purple shadow-base rounded-full relative"
+    >
+      <div
+        class="self-center absolute w-max h-max border-solid md:py-2 md:px-6 md:border-b-1"
+      >
+        <div class="w-max xs:text-xs md:text-7xl font-700">
+          {{ nameHeader }}
+        </div>
+        <div
+          class="w-max xs:text-2xs md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6"
+        >
+          Web Developer
+        </div>
+      </div>
+      <div
+        class="w-full self-end absolute md:-right-28 xs:-right-4 bottom-0 md:text-base xs:text-3xs"
+      >
+        {{ phoneHeader }}
+      </div>
+    </div>
   </div>
-  <div class="flex w-full justify-end md:pt-6 md:pr-6 xs:pr-3 xs:pt-3 top-0 absolute">
+  <div
+    class="flex w-full justify-end md:pt-6 md:pr-6 xs:pr-3 xs:pt-3 top-0 absolute"
+  >
     <button
       (click)="changeLang()"
       class="bg-white p-0.5 rounded-2 hover:shadow-center"

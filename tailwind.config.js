@@ -37,6 +37,8 @@ module.exports = {
       proxima: ["ProximaNova", "sans-serif"],
     },
     fontSize: {
+      "3xs": ["0.375rem"], // 6px
+      "2xs": ["0.5rem"], // 8px
       xss: ["0.625rem"], // 10px
       xs: ["0.75rem"], // 12px
       sm: ["0.875rem"], // 14px
@@ -47,6 +49,10 @@ module.exports = {
       "3xl": ["1.5rem"], // 24px
       "4xl": ["1.875rem"], // 30px
       "5xl": ["2rem"], // 32px
+      "6xl": ["2.25rem"], // 36px
+      "7xl": ["2.5rem"], // 40px
+      "8xl": ["3rem"], // 48px
+      "9xl": ["3.5rem"], // 56px
     },
     colors: {
       transparent: "transparent",
@@ -162,6 +168,7 @@ module.exports = {
     borderWidth: {
       DEFAULT: "1px",
       0: "0",
+      1: "1px",
       2: "2px",
       3: "3px",
       7: "7px",

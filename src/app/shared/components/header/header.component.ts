@@ -9,6 +9,8 @@ import { AuthService } from 'src/app/core/services/authenticator/authservice.ser
 })
 export class HeaderComponent implements OnInit {
   toggleMenu = false;
+  nameHeader = 'Lucas Caetano';
+  phoneHeader = '+55(44)99708-7793';
 
   constructor(
     public translateService: TranslateService,

@@ -9,7 +9,8 @@
   },
   "NAVBAR": {
     "HOME": "Home",
-    "ABOUT": "About"
+    "ABOUT": "About me",
+    "PROJECTS": "Projects"
   },
   "FOOTER":{
     "CONTACT": "Contact me",
