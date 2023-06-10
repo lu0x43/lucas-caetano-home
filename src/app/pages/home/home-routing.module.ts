@@ -10,11 +10,11 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   // {
-  //   path: 'about', loadChildren: () => import('../about/about.module').then(m => m.AboutModule)
+  //   path: 'about', component: AboutComponent
   // },
   // {
-  //   path: 'contact', loadChildren: () => import('../contact/contact.module').then(m => m.ContactModule)
-  // },
+  //   path: 'projects', component: ProjectsComponent
+  // }
 
 ];
 
