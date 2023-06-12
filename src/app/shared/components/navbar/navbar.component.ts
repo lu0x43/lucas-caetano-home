@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,23 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  constructor() {}
+  navbarText: string[] = ['NAVBAR.HOME', 'NAVBAR.CAREER', 'NAVBAR.PROJECTS'];
+  activePage: string = 'NAVBAR.HOME';
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
-  navigateTo(page: string): void {
+  callComponent(page: string): void {
     switch (page) {
-      case 'home':
-        window.location.href = 'home';
+      case 'NAVBAR.HOME':
+        this.router.navigate(['/home']);
+        this.activePage = 'NAVBAR.HOME';
         break;
-      case 'about':
-        window.location.href = 'about';
+      case 'NAVBAR.CAREER':
+        this.router.navigate(['/career']);
+        this.activePage = 'NAVBAR.CAREER';
         break;
-      // case 'contact':
-      //   window.location.href = 'contact';
-      //   break;
+      case 'NAVBAR.PROJECTS':
+        this.router.navigate(['/projects']);
+        this.activePage = 'NAVBAR.PROJECTS';
+        break;
       default:
-        window.location.href = 'home';
+        this.router.navigate(['/home']);
+        this.activePage = 'NAVBAR.HOME';
         break;
     }
   }

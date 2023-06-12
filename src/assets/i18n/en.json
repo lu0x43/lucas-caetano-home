@@ -9,7 +9,7 @@
   },
   "NAVBAR": {
     "HOME": "Home",
-    "ABOUT": "About me",
+    "CAREER": "Career",
     "PROJECTS": "Projects"
   },
   "FOOTER":{
@@ -23,5 +23,9 @@
     "GITHUB": "GitHub",
     "INSTAGRAM": "Instagram",
     "COPYRIGHT": "All rights reserved"
+  },
+  "HOME": {
+    "ABOUTME": "About me",
+    "ABOUTME_TEXT": ""
   }
 }

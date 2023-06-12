@@ -9,10 +9,10 @@
   },
   "NAVBAR": {
     "HOME": "Início",
-    "ABOUT": "Sobre mim",
+    "CAREER": "Carreira",
     "PROJECTS": "Projetos"
   },
-  "FOOTER":{
+  "FOOTER": {
     "CONTACT": "Entre em contato",
     "SOCIAL": "Redes Sociais:",
     "FOLLOW": "Siga-me",
@@ -23,5 +23,9 @@
     "GITHUB": "GitHub",
     "INSTAGRAM": "Instagram",
     "COPYRIGHT": "Todos os direitos reservados"
+  },
+  "HOME": {
+    "ABOUTME": "Sobre mim",
+    "ABOUTME_TEXT": ""
   }
 }

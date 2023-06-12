@@ -9,6 +9,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { PagesModule } from './pages/pages.module';
 
 registerLocaleData(localeEn, 'en');
 registerLocaleData(localePt, 'pt-br');
@@ -19,9 +20,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
     CoreModule,
+    BrowserModule,
     SharedModule,
+    PagesModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

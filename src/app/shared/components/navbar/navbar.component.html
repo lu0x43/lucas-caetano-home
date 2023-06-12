@@ -1,34 +1,16 @@
-<ng-container>
-  <div
-    class="w-full md:h-12 xs:h-6 flex flex-row justify-center items-center shadow-bottom"
-  >
-    <div class="flex flex-row gap-20 h-max">
-      <div class="flex- flew-row">
-        <a
-          class="text-lg font-700 hover:text-purple-1 hover:cursor-pointer"
-          (click)="navigateTo('home')"
-        >
-          {{ 'NAVBAR.HOME' | translate }}
-        </a>
-      </div>
-
-      <div class="flex- flew-row">
-        <a
-          class="text-lg font-700 hover:text-purple-1 hover:cursor-pointer"
-          (click)="navigateTo('about')"
-        >
-          {{ 'NAVBAR.ABOUT' | translate }}
-        </a>
-      </div>
-
-      <div class="flex- flew-row">
-        <a
-          class="text-lg font-700 hover:text-purple-1 hover:cursor-pointer"
-          (click)="navigateTo('projects')"
-        >
-          {{ 'NAVBAR.PROJECTS' | translate }}
-        </a>
+<div
+  class="w-full md:h-12 xs:h-6 flex flex-row justify-center items-center shadow-bottom"
+>
+  <ng-container *ngFor="let page of navbarText; let i = index">
+    <div
+      class="navcolor"
+      [ngClass]="{
+      'navcolorize': activePage === page ,
+      }"
+    >
+      <div class="navigate" (click)="callComponent(page)">
+        {{ page | translate }}
       </div>
     </div>
-  </div>
-</ng-container>
+  </ng-container>
+</div>
