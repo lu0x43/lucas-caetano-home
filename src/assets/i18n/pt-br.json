@@ -33,7 +33,9 @@
     "TITLE": "Minha carreira"
   },
   "SKILLS": {
-    "TITLE": "Habilidades e conhecimentos "
+    "TITLE": "Habilidades e conhecimentos ",
+    "PRINCIPAL": "Principais",
+    "LEARNING": "Aprendendo e estudando"
   },
   "ABOUT": {
     "TITLE": "Mais sobre mim"

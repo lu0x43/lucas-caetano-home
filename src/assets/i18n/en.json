@@ -33,7 +33,9 @@
     "TITLE": "My career"
   },
   "SKILLS": {
-    "TITLE": " My skills"
+    "TITLE": " My skills",
+    "PRINCIPAL": "Principal",
+    "LEARNING": "Learning and studying"
   },
   "ABOUT": {
     "TITLE": "More about me"

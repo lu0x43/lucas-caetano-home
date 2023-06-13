@@ -1,12 +1,35 @@
 <div class="w-full h-auto flex flex-col justify-center items-start">
   <ng-container>
+    <h2>
+      {{ 'SKILLS.TITLE' | translate }}
+    </h2>
     <section>
-      <h2>
-        {{ 'SKILLS.TITLE' | translate }}
-      </h2>
       <p>
-        txt
+        {{ 'SKILLS.PRINCIPAL' | translate }}
       </p>
+      <div class="display-imgs">
+        <ng-container *ngFor="let image of habilities">
+          <img
+            [alt]="image"
+            [title]="image"
+            [src]="'../../../../assets/icons/icon/' + image + '.svg'"
+          />
+        </ng-container>
+      </div>
+    </section>
+    <section>
+      <p>
+        {{ 'SKILLS.LEARNING' | translate }}
+      </p>
+      <div class="display-imgs">
+        <ng-container *ngFor="let imgLearn of learning">
+          <img
+            [alt]="imgLearn"
+            [title]="imgLearn"
+            [src]="'../../../../assets/icons/icon/' + imgLearn + '.svg'"
+          />
+        </ng-container>
+      </div>
     </section>
   </ng-container>
 </div>

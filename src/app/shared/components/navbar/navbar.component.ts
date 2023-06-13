@@ -14,38 +14,21 @@ export class NavbarComponent implements OnInit {
     'NAVBAR.ABOUTME',
     'NAVBAR.PROJECTS',
   ];
-  activePage: string = 'NAVBAR.HOME';
+  nameScroll: string[] = [];
 
   constructor(private viewPortScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
 
   scrollComponent(page: string): void {
-    switch (page) {
-      case 'NAVBAR.HOME':
-        this.viewPortScroller.scrollToAnchor('home');
-        // this.activePage = 'NAVBAR.HOME';
-        break;
-      case 'NAVBAR.CAREER':
-        this.viewPortScroller.scrollToAnchor('career');
-        // this.activePage = 'NAVBAR.CAREER';
-        break;
-      case 'NAVBAR.SKILLS':
-        this.viewPortScroller.scrollToAnchor('skills');
-        // this.activePage = 'NAVBAR.SKILLS';
-        break;
-      case 'NAVBAR.ABOUTME':
-        this.viewPortScroller.scrollToAnchor('about');
-        // this.activePage = 'NAVBAR.ABOUTME';
-        break;
-      case 'NAVBAR.PROJECTS':
-        this.viewPortScroller.scrollToAnchor('projects');
-        // this.activePage = 'NAVBAR.PROJECTS';
-        break;
-      default:
-        this.viewPortScroller.scrollToAnchor('home');
-        // this.activePage = 'NAVBAR.HOME';
-        break;
-    }
+    this.nameScroll = page.split('.');
+    this.nameScroll.shift();
+    this.nameScroll = this.nameScroll.map((element) => {
+      return element.toLowerCase();
+    });
+
+    this.nameScroll.forEach((element) => {
+      this.viewPortScroller.scrollToAnchor(element);
+    });
   }
 }
