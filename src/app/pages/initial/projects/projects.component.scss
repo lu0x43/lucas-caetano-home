@@ -1,7 +1,16 @@
 h2 {
-  @apply md:text-xl font-700 text-gray-2 xs:text-base;
+  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-2;
 }
 
 p {
-  @apply pl-4 md:pt-4 md:text-base xs:text-xs xs:pt-2;
+  @apply pl-4 md:py-4 md:text-lg xs:text-xs xs:pt-2;
+}
+
+section {
+  @apply w-full flex flex-wrap justify-center;
+}
+
+.card {
+  @apply w-52 h-80 bg-gray-3 shadow-base rounded-30;
+  filter:blur(2px)
 }

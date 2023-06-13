@@ -1,5 +1,5 @@
 h2 {
-  @apply md:text-xl font-700 text-gray-2 xs:text-base;
+  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-2;
 }
 
 p {
@@ -15,5 +15,5 @@ section {
 }
 
 img {
-  @apply m-5 hover:scale-125 w-20 h-20;
+  @apply m-5 hover:scale-125 md:w-20 md:h-20 xs:w-10 xs:h-10;
 }

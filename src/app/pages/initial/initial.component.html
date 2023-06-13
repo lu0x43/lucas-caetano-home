@@ -22,7 +22,14 @@
     </div>
     <div class="btn-backtop">
       <a (click)="backToTop()">
-        <img src="../../../assets/icons/icon/back-top.svg" alt="backtop" />
+        <div class="text-xs text-purple-2 bg-white rounded-30 px-1">
+          {{ 'BACKTOTOP' | translate }}
+        </div>
+        <img
+          src="../../../assets/icons/icon/back-top.svg"
+          alt="backtop"
+          [title]="'BACKTOTOP'"
+        />
       </a>
     </div>
   </div>
