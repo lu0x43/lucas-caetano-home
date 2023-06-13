@@ -8,6 +8,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { InitialRoutingModule } from './initial-routing.module';
 import { InitialComponent } from './initial.component';
 import { SkillsComponent } from './skills/skills.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,15 @@ import { SkillsComponent } from './skills/skills.component';
     AboutComponent,
     ProjectsComponent,
   ],
-  imports: [CommonModule, InitialRoutingModule, SharedModule],
+  imports: [
+    CommonModule,
+    InitialRoutingModule,
+    SharedModule,
+    //anchorScrolling: 'enabled' is used to enable the anchor scrolling
+    RouterModule.forRoot([], {
+      anchorScrolling: 'enabled',
+    }),
+  ],
   exports: [
     InitialRoutingModule,
     InitialComponent,

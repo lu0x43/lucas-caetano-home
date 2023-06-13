@@ -10,9 +10,11 @@
   "NAVBAR": {
     "HOME": "Home",
     "CAREER": "Career",
+    "SKILLS": "Skills",
+    "ABOUTME": "About me",
     "PROJECTS": "Projects"
   },
-  "FOOTER":{
+  "FOOTER": {
     "CONTACT": "Contact me",
     "SOCIAL": "Social networks:",
     "FOLLOW": "Follow me",
@@ -25,8 +27,8 @@
     "COPYRIGHT": "All rights reserved"
   },
   "HOME": {
-    "WELCOME":"Hello, welcome to my website!",
-    "ABOUTME": "About me",
+    "WELCOME": "Hello, welcome to my website!",
+    "ABOUTME": "More about me",
     "ABOUTME_TEXT": ""
   }
 }

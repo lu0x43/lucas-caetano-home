@@ -2,15 +2,10 @@
   class="w-full md:h-12 xs:h-6 flex flex-row justify-center items-center shadow-bottom"
 >
   <ng-container *ngFor="let page of navbarText; let i = index">
-    <div
-      class="flex flex-row h-full items-center"
-      [ngClass]="{
-      'navcolor': activePage === page ,
-      }"
-    >
+    <div class="flex flex-row h-full items-center">
       <div
         class="md:px-12 xs:px-4 xs:text-xs md:text-lg md:font-700 hover:text-purple-1 hover:cursor-pointer hover:scale-90"
-        (click)="callComponent(page)"
+        (click)="scrollComponent(page)"
       >
         {{ page | translate }}
       </div>

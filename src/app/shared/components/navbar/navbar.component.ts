@@ -1,5 +1,5 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,30 +7,44 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  navbarText: string[] = ['NAVBAR.HOME', 'NAVBAR.CAREER', 'NAVBAR.PROJECTS'];
+  navbarText: string[] = [
+    'NAVBAR.HOME',
+    'NAVBAR.CAREER',
+    'NAVBAR.SKILLS',
+    'NAVBAR.ABOUTME',
+    'NAVBAR.PROJECTS',
+  ];
   activePage: string = 'NAVBAR.HOME';
 
-  constructor(private router: Router) {}
+  constructor(private viewPortScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
 
-  callComponent(page: string): void {
+  scrollComponent(page: string): void {
     switch (page) {
       case 'NAVBAR.HOME':
-        this.router.navigate(['/home']);
-        this.activePage = 'NAVBAR.HOME';
+        // this.activePage = 'NAVBAR.HOME';
+        this.viewPortScroller.scrollToAnchor('home');
         break;
       case 'NAVBAR.CAREER':
-        this.router.navigate(['/career']);
-        this.activePage = 'NAVBAR.CAREER';
+        this.viewPortScroller.scrollToAnchor('career');
+        // this.activePage = 'NAVBAR.CAREER';
+        break;
+      case 'NAVBAR.SKILLS':
+        this.viewPortScroller.scrollToAnchor('skills');
+        // this.activePage = 'NAVBAR.SKILLS';
+        break;
+      case 'NAVBAR.ABOUTME':
+        this.viewPortScroller.scrollToAnchor('aboutme');
+        // this.activePage = 'NAVBAR.ABOUTME';
         break;
       case 'NAVBAR.PROJECTS':
-        this.router.navigate(['/projects']);
-        this.activePage = 'NAVBAR.PROJECTS';
+        this.viewPortScroller.scrollToAnchor('projects');
+        // this.activePage = 'NAVBAR.PROJECTS';
         break;
       default:
-        this.router.navigate(['/home']);
-        this.activePage = 'NAVBAR.HOME';
+        this.viewPortScroller.scrollToAnchor('home');
+        // this.activePage = 'NAVBAR.HOME';
         break;
     }
   }
