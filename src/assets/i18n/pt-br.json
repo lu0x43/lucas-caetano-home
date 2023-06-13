@@ -11,7 +11,7 @@
     "HOME": "Início",
     "CAREER": "Carreira",
     "SKILLS": "Habilidades",
-    "ABOUTME":"Sobre mim",
+    "ABOUTME": "Sobre mim",
     "PROJECTS": "Projetos"
   },
   "FOOTER": {
@@ -27,8 +27,18 @@
     "COPYRIGHT": "Todos os direitos reservados"
   },
   "HOME": {
-    "WELCOME": "Olá, seja bem vindo!",
-    "ABOUTME": "Mais sobre mim",
-    "ABOUTME_TEXT": ""
+    "TITLE": "Olá, seja bem vindo!"
+  },
+  "CAREER": {
+    "TITLE": "Minha carreira"
+  },
+  "SKILLS": {
+    "TITLE": "Habilidades e conhecimentos "
+  },
+  "ABOUT": {
+    "TITLE": "Mais sobre mim"
+  },
+  "PROJECTS": {
+    "TITLE": "Meus projetos"
   }
 }

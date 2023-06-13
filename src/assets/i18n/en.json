@@ -27,8 +27,18 @@
     "COPYRIGHT": "All rights reserved"
   },
   "HOME": {
-    "WELCOME": "Hello, welcome to my website!",
-    "ABOUTME": "More about me",
-    "ABOUTME_TEXT": ""
+    "TITLE": "Hello, welcome to my website!"
+  },
+  "CAREER": {
+    "TITLE": "My career"
+  },
+  "SKILLS": {
+    "TITLE": " My skills"
+  },
+  "ABOUT": {
+    "TITLE": "More about me"
+  },
+  "PROJECTS": {
+    "TITLE": "My projects"
   }
 }
