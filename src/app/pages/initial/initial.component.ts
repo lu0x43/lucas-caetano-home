@@ -11,7 +11,7 @@ export class InitialComponent implements OnInit {
 
   ngOnInit(): void {
     window.addEventListener('scroll', () => {
-      const backToTopButton = document.getElementById('btn-backtop');
+      const backToTopButton = document.querySelector('.btn-backtop');
       if (window.scrollY > 100) {
         backToTopButton?.classList.add('show');
       } else {
