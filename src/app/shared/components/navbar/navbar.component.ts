@@ -23,8 +23,8 @@ export class NavbarComponent implements OnInit {
   scrollComponent(page: string): void {
     switch (page) {
       case 'NAVBAR.HOME':
-        // this.activePage = 'NAVBAR.HOME';
         this.viewPortScroller.scrollToAnchor('home');
+        // this.activePage = 'NAVBAR.HOME';
         break;
       case 'NAVBAR.CAREER':
         this.viewPortScroller.scrollToAnchor('career');
@@ -35,7 +35,7 @@ export class NavbarComponent implements OnInit {
         // this.activePage = 'NAVBAR.SKILLS';
         break;
       case 'NAVBAR.ABOUTME':
-        this.viewPortScroller.scrollToAnchor('aboutme');
+        this.viewPortScroller.scrollToAnchor('about');
         // this.activePage = 'NAVBAR.ABOUTME';
         break;
       case 'NAVBAR.PROJECTS':

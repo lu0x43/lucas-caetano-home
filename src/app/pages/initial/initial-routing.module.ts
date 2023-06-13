@@ -16,11 +16,15 @@ const routes: Routes = [
     path: '**',
     redirectTo: '/initial',
     pathMatch: 'full',
-  }
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled' || 'top',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class InitialRoutingModule {}

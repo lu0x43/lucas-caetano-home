@@ -31,11 +31,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient],
       },
     }),
-    // RouterModule.forRoot(routes, [
-    //   {
-    //     anchorScrolling: 'enabled',
-    //   },
-    // ]),
+    // RouterModule.forRoot([], {
+    //   anchorScrolling: 'enabled',
+    //   // scrollPositionRestoration: 'enabled' || 'top',
+    // }),
 
     // NgxMaskModule.forRoot(),
   ],

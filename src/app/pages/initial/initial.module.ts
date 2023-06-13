@@ -23,7 +23,6 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     InitialRoutingModule,
     SharedModule,
-    //anchorScrolling: 'enabled' is used to enable the anchor scrolling
     RouterModule.forRoot([], {
       anchorScrolling: 'enabled',
     }),

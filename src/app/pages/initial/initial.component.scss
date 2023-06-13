@@ -1,3 +1,14 @@
-html{
-  scroll-behavior: smooth;
+.btn-backtop {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-backtop.show {
+  opacity: 1;
+  visibility: visible;
 }
