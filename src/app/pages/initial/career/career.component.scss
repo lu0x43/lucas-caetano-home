@@ -1,7 +1,7 @@
 h2 {
-  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-2;
+  @apply md:text-xl xs:text-base md:pt-6 xs:pt-1 font-700 text-gray-2;
 }
 
 p {
-  @apply pl-4 md:pt-4 md:text-base xs:text-xs xs:pt-2;
+  @apply md:pl-4 xs:pl-1 md:pt-4 md:text-base xs:text-xs xs:pt-2;
 }
