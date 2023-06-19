@@ -30,9 +30,9 @@
   },
   "HOME": {
     "TITLE": "Hello, welcome to my website!",
-    "PARAGRAPH_1": "My name is Lucas, I'm passionate about web development, I've been working in this challenging market since 2020, creating codes that drive business, always looking to bring the best technological solutions.",
-    "PARAGRAPH_2": "Throughout my journey, I have actively participated in the life cycles of several web projects. With broad and diverse experience, which allows me to have a comprehensive view of the entire development process. I was recognized for my ability to create projects from scratch, as well as support in correcting projects already in production. I am constantly updating myself and following market trends, exploring new technologies to offer efficient solutions.",
-    "PARAGRAPH_3": "Please feel free to explore my website and get in touch with me. I'm ready to collaborate and turn your ideas into reality through functional, intuitive and aesthetically appealing web applications. Let's embark on this journey together!"
+    "PARAGRAPH_1": "My name is Lucas, and I'm passionate about web development. I have been working in this challenging market since 2020, creating codes that boost business and always striving to provide the best technological solutions.",
+    "PARAGRAPH_2": "Throughout my journey, I have actively participated in the life cycles of several web projects. With a holistic understanding of the entire development process, I have gained broad and diverse experience. I have been recognized for my ability to create projects from scratch, as well as debug projects already in production. I am continuously updating my skills and staying abreast of market trends, exploring new technologies to offer efficient solutions.",
+    "PARAGRAPH_3": "Please feel free to explore my website and get in touch with me. I'm ready to collaborate and turn your ideas into reality through functional, intuitive, and aesthetically appealing web applications. Let's embark on this journey together!"
   },
   "CAREER": {
     "TITLE": "My career"
@@ -43,7 +43,11 @@
     "LEARNING": "Learning and studying"
   },
   "ABOUT": {
-    "TITLE": "More about me"
+    "TITLE": "More about me",
+    "PARAGRAPH_1":"Being passionate about the field of cybersecurity, I constantly strive to enhance my knowledge in this ever-evolving area. The complexity of the digital world and the accompanying threats fascinate me and motivate me to stay up to date.",
+    "PARAGRAPH_2":"In addition, I have a beautiful family, with an exceptional wife, and I am blessed to be the father of two wonderful children. They are my greatest source of inspiration and motivation to grow and surpass myself every day. Family is a fundamental pillar in my life, and finding a healthy balance between work and dedicating time to them is a priority for me.",
+    "PARAGRAPH_3":"To maintain an active lifestyle, I am a sports enthusiast. I believe that movement and physical exercise are essential to keeping the mind and body healthy. In particular, I have a passion for martial arts, having practiced boxing in the past and currently dedicating myself to escrima. The discipline, focus, and constant challenge of these practices teach me valuable lessons in perseverance and self-control.",
+    "PARAGRAPH_4":"Another significant aspect of who I am is my passion for reading. I enjoy reading technical books, always seeking to learn more and stay updated on the latest trends and technologies in the world of computer science. Additionally, I have a special appreciation for philosophy books, as I believe that reflection and the pursuit of philosophical knowledge are crucial for a deeper understanding of existence and the issues that surround us."
   },
   "PROJECTS": {
     "TITLE": "My projects"
