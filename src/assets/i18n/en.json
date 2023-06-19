@@ -29,7 +29,10 @@
     "COPYRIGHT": "All rights reserved"
   },
   "HOME": {
-    "TITLE": "Hello, welcome to my website!"
+    "TITLE": "Hello, welcome to my website!",
+    "PARAGRAPH_1": "My name is Lucas, I'm passionate about web development, I've been working in this challenging market since 2020, creating codes that drive business, always looking to bring the best technological solutions.",
+    "PARAGRAPH_2": "Throughout my journey, I have actively participated in the life cycles of several web projects. With broad and diverse experience, which allows me to have a comprehensive view of the entire development process. I was recognized for my ability to create projects from scratch, as well as support in correcting projects already in production. I am constantly updating myself and following market trends, exploring new technologies to offer efficient solutions.",
+    "PARAGRAPH_3": "Please feel free to explore my website and get in touch with me. I'm ready to collaborate and turn your ideas into reality through functional, intuitive and aesthetically appealing web applications. Let's embark on this journey together!"
   },
   "CAREER": {
     "TITLE": "My career"
