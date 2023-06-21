@@ -2,9 +2,13 @@
   "BACK": "voltar",
   "OR": "ou",
   "AND": "e",
-  "ROLE": "Desenvolvedor Web",
   "BACKTOTOP": "Voltar ao topo",
   "CONSTRUCTION": "Em construção...",
+  "ROLES" : {
+    "WEB_DEV": "Desenvolvedor web",
+    "MOBILE_DEV": "Desenvolvedor Mobile",
+    "REDTEAM": "Red Team"
+  },
   "HEADER": {
     "SEARCH_BAR": "Pesquisar",
     "WELCOME": "Bem-vindo ao meu site!",

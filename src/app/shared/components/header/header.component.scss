@@ -4,3 +4,42 @@
 .buttom-custom-en {
   @apply w-5 h-5 bg-white rounded-full absolute -top-1 -right-1;
 }
+
+.roles {
+  @apply xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 w-max whitespace-nowrap capitalize relative;
+}
+
+.role-span {
+  @apply flex flex-col absolute md:mt-2 xs:mt-2 md:h-6 xs:h-3 overflow-hidden;
+}
+
+span {
+  animation: slide 12s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid black;
+  animation: typing 4s steps(18) infinite;
+}
+
+@keyframes typing {
+  40% {
+    left: 100%;
+  }
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}

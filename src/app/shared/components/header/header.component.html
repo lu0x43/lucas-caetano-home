@@ -7,15 +7,19 @@
       class="flex flex-col justify-center self-center md:left-32 xs:w-16 xs:h-16 md:w-44 md:h-44 bg-gradient-to-r from-blue to-blue-5 shadow-base rounded-full relative"
     >
       <div
-        class="self-center absolute w-max h-max border-solid md:py-2 md:px-6 md:border-b-2 xs:border-b-1"
+        class="self-center absolute w-max h-max border-solid md:py-4 xs:py-2 md:px-6 xs:px-3 md:border-b-2 xs:border-b-1"
       >
         <div class="w-max xs:text-sm md:text-7xl font-700 whitespace-nowrap">
           {{ nameHeader }}
         </div>
-        <div
-          class="w-max xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 whitespace-nowrap capitalize"
-        >
-          {{ 'ROLE' | translate }}
+        <div class="roles">
+          <div class="role-span">
+            <ng-container *ngFor="let role of rolesHeader">
+              <span>
+                {{ role | translate }}
+              </span>
+            </ng-container>
+          </div>
         </div>
       </div>
       <div
