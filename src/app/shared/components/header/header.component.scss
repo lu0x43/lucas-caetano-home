@@ -6,7 +6,7 @@
 }
 
 .roles {
-  @apply xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 w-max whitespace-nowrap capitalize relative;
+  @apply xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 md:py-2 xs:py-1 w-max whitespace-nowrap capitalize relative;
 }
 
 .role-span {
