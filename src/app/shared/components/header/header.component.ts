@@ -12,11 +12,19 @@ export class HeaderComponent implements OnInit {
   nameHeader = 'Lucas Caetano';
   phoneHeader = '+55(44)99708-7793';
 
-  rolesHeader: string [] = [
+  rolesHeader: string[] = [
     'ROLES.WEB_DEV',
     'ROLES.MOBILE_DEV',
-    'ROLES.REDTEAM'
-  ]
+    'ROLES.REDTEAM',
+    'ROLES.REVERSE_ENGINEER'
+  ];
+
+  imgList: string[] = [
+    'web-dev',
+    'reverse-engineer',
+    'bug-bounty',
+    'mobile-dev',
+  ];
 
   constructor(
     public translateService: TranslateService,

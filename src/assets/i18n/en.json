@@ -4,10 +4,11 @@
   "AND": "and",
   "BACKTOTOP": "Back to top",
   "CONSTRUCTION": "Construction...",
-  "ROLES":{
-    "WEB_DEV" : "Web developer",
-    "MOBILE_DEV" : "Mobile developer",
-    "REDTEAM" : "Red team"
+  "ROLES": {
+    "WEB_DEV": "Web developer",
+    "MOBILE_DEV": "Mobile developer",
+    "REDTEAM": "Red team",
+    "REVERSE_ENGINEER": "Reverse engineer"
   },
   "HEADER": {
     "SEARCH_BAR": "Search",
@@ -49,10 +50,10 @@
   },
   "ABOUT": {
     "TITLE": "More about me",
-    "PARAGRAPH_1":"I am passionate about cybersecurity and constantly strive to enhance my knowledge in this ever-evolving field.",
-    "PARAGRAPH_2":"I have a wonderful family that inspires and motivates me to grow and surpass myself every day. Finding a healthy balance between work and family dedication is my priority.",
-    "PARAGRAPH_3":"I am an enthusiast of sports, particularly martial arts, and believe that movement and physical exercise are essential for maintaining a healthy mind and body. Currently, I practice escrima, a martial art that challenges me and teaches valuable lessons of perseverance and self-control.",
-    "PARAGRAPH_4":"I have a passion for reading, both technical books to stay updated on the latest trends in the technology field, and philosophical works to deepen my understanding of existence and the issues that surround us."
+    "PARAGRAPH_1": "I am passionate about cybersecurity and constantly strive to enhance my knowledge in this ever-evolving field.",
+    "PARAGRAPH_2": "I have a wonderful family that inspires and motivates me to grow and surpass myself every day. Finding a healthy balance between work and family dedication is my priority.",
+    "PARAGRAPH_3": "I am an enthusiast of sports, particularly martial arts, and believe that movement and physical exercise are essential for maintaining a healthy mind and body. Currently, I practice escrima, a martial art that challenges me and teaches valuable lessons of perseverance and self-control.",
+    "PARAGRAPH_4": "I have a passion for reading, both technical books to stay updated on the latest trends in the technology field, and philosophical works to deepen my understanding of existence and the issues that surround us."
   },
   "PROJECTS": {
     "TITLE": "My projects"

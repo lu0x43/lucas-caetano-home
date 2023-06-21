@@ -4,10 +4,11 @@
   "AND": "e",
   "BACKTOTOP": "Voltar ao topo",
   "CONSTRUCTION": "Em construção...",
-  "ROLES" : {
+  "ROLES": {
     "WEB_DEV": "Desenvolvedor web",
     "MOBILE_DEV": "Desenvolvedor Mobile",
-    "REDTEAM": "Red Team"
+    "REDTEAM": "Red Team",
+    "REVERSE_ENGINEER": "Engenharia reversa"
   },
   "HEADER": {
     "SEARCH_BAR": "Pesquisar",
@@ -49,10 +50,10 @@
   },
   "ABOUT": {
     "TITLE": "Mais sobre mim",
-    "PARAGRAPH_1":"Sou apaixonado por segurança cibernética e estou sempre em busca de aprimorar meus conhecimentos nessa área em constante evolução.",
-    "PARAGRAPH_2":"Tenho uma família maravilhosa que me inspira e motiva a crescer e me superar todos os dias. Encontrar um equilíbrio saudável entre trabalho e dedicação à família é minha prioridade.",
-    "PARAGRAPH_3":"Sou entusiasta dos esportes, especialmente das artes marciais, e acredito que o movimento e o exercício físico são essenciais para manter mente e corpo saudáveis. Atualmente, pratico escrima, uma arte marcial que me desafia e me ensina valiosas lições de perseverança e autocontrole.",
-    "PARAGRAPH_4":"Tenho paixão pela leitura, tanto de livros técnicos para me manter atualizado nas últimas tendências da área de tecnologia, como de obras filosóficas para aprofundar minha compreensão da existência e das questões que nos cercam."
+    "PARAGRAPH_1": "Sou apaixonado por segurança cibernética e estou sempre em busca de aprimorar meus conhecimentos nessa área em constante evolução.",
+    "PARAGRAPH_2": "Tenho uma família maravilhosa que me inspira e motiva a crescer e me superar todos os dias. Encontrar um equilíbrio saudável entre trabalho e dedicação à família é minha prioridade.",
+    "PARAGRAPH_3": "Sou entusiasta dos esportes, especialmente das artes marciais, e acredito que o movimento e o exercício físico são essenciais para manter mente e corpo saudáveis. Atualmente, pratico escrima, uma arte marcial que me desafia e me ensina valiosas lições de perseverança e autocontrole.",
+    "PARAGRAPH_4": "Tenho paixão pela leitura, tanto de livros técnicos para me manter atualizado nas últimas tendências da área de tecnologia, como de obras filosóficas para aprofundar minha compreensão da existência e das questões que nos cercam."
   },
   "PROJECTS": {
     "TITLE": "Meus projetos"
