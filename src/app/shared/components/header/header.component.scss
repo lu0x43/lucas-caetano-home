@@ -6,11 +6,11 @@
 }
 
 .roles {
-  @apply xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 md:py-2 xs:py-1 w-max whitespace-nowrap capitalize relative;
+  @apply xs:text-xss md:text-2xl xs:font-500 md:font-600 xs:bottom-0 md:bottom-6 md:py-2 xs:py-0 w-max whitespace-nowrap capitalize relative;
 }
 
 .role-span {
-  @apply flex flex-col absolute md:mt-2 xs:mt-2 md:h-6 xs:h-3 overflow-hidden;
+  @apply flex flex-col md:absolute md:mt-2 md:h-7 xs:h-4 overflow-hidden;
 }
 
 span {
@@ -46,6 +46,10 @@ span::after {
 
 .images {
   @apply md:h-[100px] md:w-[100px] xs:h-[30px] xs:w-[30px];
+  filter: blur(2px);
+}
+.images:hover {
+  filter: blur(0px);
 }
 
 .images:nth-last-of-type(4) {
