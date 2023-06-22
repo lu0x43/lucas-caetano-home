@@ -19,7 +19,15 @@ export class SkillsComponent implements OnInit {
     'Windows',
     'Linux',
   ];
-  learning: string[] = ['React', 'CSharp', 'DotNET', 'SQL', 'Kotlin', 'RedHat'];
+  learning: string[] = [
+    'React',
+    'CSharp',
+    'DotNET',
+    'SQL',
+    'Kotlin',
+    'RedHat',
+    'reverse-engineer',
+  ];
   constructor() {}
   ngOnInit(): void {}
 }

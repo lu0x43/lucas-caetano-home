@@ -1,9 +1,9 @@
-<div class="w-full h-auto flex flex-col justify-center items-center">
+<div class="w-full h-auto flex flex-col justify-center items-center bg-gray-3">
   <div class="w-full">
     <app-navbar></app-navbar>
   </div>
   <div
-    class="flex flex-col xs:w-3/4 md:w-1/2 xs:px-6 md:px-10 md:my-8 xs:my-4 md:py-6 xs:py-2 shadow-center"
+    class="flex flex-col xs:w-3/4 md:w-1/2 xs:px-6 md:px-10 md:my-8 xs:my-4 md:py-6 xs:py-2 bg-gray-3 shadow-center"
   >
     <div id="home">
       <app-home></app-home>
@@ -22,7 +22,7 @@
     </div>
     <div class="btn-backtop">
       <a (click)="backToTop()">
-        <div class="text-xs text-blue font-600 bg-white rounded-30 px-1">
+        <div class="text-xs text-blue font-600 bg-gray-3 rounded-30 px-1">
           {{ 'BACKTOTOP' | translate }}
         </div>
         <img
