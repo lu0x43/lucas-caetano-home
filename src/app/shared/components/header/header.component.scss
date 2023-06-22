@@ -10,7 +10,7 @@
 }
 
 .role-span {
-  @apply flex flex-col md:absolute md:mt-2 md:h-7 xs:h-4 overflow-hidden;
+  @apply flex flex-col md:absolute md:mt-2 md:h-7 xs:h-[14px] overflow-hidden;
 }
 
 span {
