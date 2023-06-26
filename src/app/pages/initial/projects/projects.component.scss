@@ -1,5 +1,5 @@
 h2 {
-  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-2;
+  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-9;
 }
 
 p {
@@ -11,6 +11,6 @@ section {
 }
 
 .card {
-  @apply w-52 h-80 bg-gray-3 shadow-base rounded-30;
+  @apply w-52 h-80 bg-gray shadow-base rounded-30;
   filter:blur(4px)
 }
