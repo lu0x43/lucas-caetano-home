@@ -6,11 +6,11 @@
 }
 
 .roles {
-  @apply xs:text-xss md:text-2xl xs:font-400 md:font-700 xs:bottom-0 md:bottom-6 md:py-2 xs:py-0 w-max whitespace-nowrap capitalize relative;
+  @apply xs:bottom-0 md:bottom-6 md:py-2 xs:py-0 w-max whitespace-nowrap capitalize relative;
 }
 
 .role-span {
-  @apply flex flex-col md:absolute md:mt-2 md:h-7 xs:h-[14px] overflow-hidden;
+  @apply flex flex-col xs:text-xss md:text-2xl xs:font-400 md:font-700 md:absolute md:mt-2 md:h-7 xs:h-[14px] overflow-hidden;
 }
 
 span {

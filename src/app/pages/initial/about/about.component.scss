@@ -5,20 +5,13 @@ h2 {
 p {
   @apply md:pl-4 xs:pl-1 md:pt-4 md:text-base xs:text-xs xs:pt-2 text-gray-8;
 }
-.circle-mask {
-  box-sizing: initial;
-  border-radius: 50%;
-  overflow: hidden;
-  @apply border-solid md:border-6 xs:border-3 border-blue-1 shadow-center ;
-  // clip-path: circle(50% at center);
-}
 
 .profile-image,
 img {
   box-sizing: initial;
   border-radius: 50%;
   object-fit: cover;
-  @apply md:w-56 md:h-56 xs:w-36 xs:h-36 border-solid md:border-6 xs:border-3 border-white overflow-hidden;
+  @apply md:w-56 md:h-56 xs:w-36 xs:h-36 border-solid md:border-6 xs:border-3 md:p-[6px] xs:p-[3px] border-blue-1 shadow-center overflow-hidden;
 
   // object-position: center;
   // border: 4px solid var(--gray-8);
