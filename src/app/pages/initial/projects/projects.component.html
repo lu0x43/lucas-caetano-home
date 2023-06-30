@@ -1,18 +1,31 @@
 <div class="w-full h-auto flex flex-col justify-center items-start">
-  <ng-container>
-    <h2>
-      {{ 'PROJECTS.TITLE' | translate }}
-    </h2>
-    <section>
-      <p class="text-red font-700">{{ 'CONSTRUCTION' | translate }}</p>
-      <div class="flex justify-around gap-10 items-center w-full flex-wrap">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </section>
-  </ng-container>
+  <h2>
+    {{ 'PROJECTS.TITLE' | translate }}
+  </h2>
+  <section>
+    <p class="text-red font-700">{{ 'CONSTRUCTION' | translate }}</p>
+    <div class="flex justify-around gap-10 items-center w-full flex-wrap">
+      <ng-container *ngFor="let p of projects">
+        <div class="card">
+          <div class="w-full h-full flex justify-center items-center relative">
+            <div></div>
+
+            <div
+              class="flex w-full justify-evenly self-end absolute bottom-2 px-2"
+              [ngClass]="{ 'align-right': p.tecnologies.length === 1 }"
+            >
+              <ng-container *ngFor="let icon of p.tecnologies">
+                <ng-container *ngIf="p.tecnologies.length > 0">
+                  <img
+                    [src]="'../../../../assets/icons/icon/' + icon + '.svg'"
+                    width="32px"
+                  />
+                </ng-container>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
 </div>

@@ -14,12 +14,12 @@
 }
 
 span {
-  animation: slide 8s steps(4) infinite;
+  animation: slide 8s steps(2) infinite;
 }
 
 @keyframes slide {
   100% {
-    transform: translateY(-400%);
+    transform: translateY(-200%);
   }
 }
 
@@ -52,20 +52,10 @@ span::after {
   filter: blur(0px);
 }
 
-.images:nth-last-of-type(4) {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.images:nth-last-of-type(3) {
-  position: absolute;
-  bottom: 0;
-  left: 20%;
-}
 .images:nth-last-of-type(2) {
   position: absolute;
-  top: 0;
-  right: 20%;
+  bottom: 0;
+  left: 0;
 }
 .images:nth-last-of-type(1) {
   position: absolute;

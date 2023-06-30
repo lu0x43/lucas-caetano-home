@@ -1,4 +1,6 @@
-<div class="w-full h-auto flex flex-col justify-center items-center bg-gray">
+<div
+  class="w-full h-auto flex flex-col justify-center items-center bg-gray overflow-hidden"
+>
   <div class="w-full">
     <app-navbar></app-navbar>
   </div>
@@ -22,7 +24,9 @@
     </div>
     <div class="btn-backtop">
       <a (click)="backToTop()">
-        <div class="md:text-xs xs:text-2xs text-gray-6 font-600 bg-gray rounded-30 px-1">
+        <div
+          class="md:text-xs xs:text-2xs text-gray-6 font-600 bg-gray rounded-30 px-1"
+        >
           {{ 'BACKTOTOP' | translate }}
         </div>
         <img
