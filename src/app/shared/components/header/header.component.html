@@ -1,14 +1,16 @@
 <div class="w-screen h-max relative">
   <div
-    class="flex flex-row justify-center xs:h-28 md:h-72 bg-gradient-to-b from-blue via-blue-1 to-blue w-screen relative"
+    class="flex flex-row justify-between items-center px-4 xs:h-28 md:h-28 bg-blue w-screen"
   >
-    <div
-      class="flex flex-col justify-center self-center xs:w-16 xs:h-16 md:w-44 md:h-44 bg-gradient-to-r from-blue to-blue-2 shadow-base rounded-full absolute"
-    >
-      <div
-        class="self-center absolute w-max h-max border-solid md:py-4 xs:pt-2 md:px-6 xs:px-3 md:border-b-2 xs:border-b-1"
-      >
-        <div class="w-max xs:text-sm md:text-7xl font-700 whitespace-nowrap">
+    <div class="flex gap-5 w-1/3">
+      <img
+        src="../../../../assets/icons/icon/icon-blue-gray.svg"
+        width="80px"
+      />
+      <div class="flex flex-col justify-center">
+        <div
+          class="w-max font-700 xs:text-sm md:text-4xl whitespace-nowrap text-gray-3"
+        >
           {{ nameHeader }}
         </div>
         <div class="roles">
@@ -21,17 +23,39 @@
           </div>
         </div>
       </div>
-      <div
-        class="w-full md:-right-24 xs:-right-4 md:bottom-0 xs:-bottom-1 md:text-base xs:text-2xs whitespace-nowrap self-end absolute italic"
-      >
-        {{ phoneHeader }}
-      </div>
     </div>
-  </div>
-  <div
-    class="flex w-full justify-end md:pt-6 md:px-6 xs:px-3 xs:pt-3 top-0 absolute"
-  >
-    <div class="flex relative gap-2">
+    <div
+      class="flex w-1/3 justify-center md:gap-10 xs:gap-4 md:relative xs:absolute xs:right-2"
+    >
+      <a href="https://github.com/devLucasCaetano" target="_blank">
+        <app-svg-icon
+          [src]="'/assets/icons/icon/github.svg'"
+          [width]="'32px'"
+          [height]="'32px'"
+          color="#e1e1e6"
+        >
+        </app-svg-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/lucas-caetano-/" target="_blank">
+        <app-svg-icon
+          [src]="'/assets/icons/icon/linkedin.svg'"
+          [width]="'32px'"
+          [height]="'32px'"
+          color="#e1e1e6"
+        >
+        </app-svg-icon>
+      </a>
+      <a href="https://www.instagram.com/dev.lucascaetano/" target="_blank">
+        <app-svg-icon
+          [src]="'/assets/icons/icon/instagram.svg'"
+          [width]="'32px'"
+          [height]="'32px'"
+          color="#e1e1e6"
+        >
+        </app-svg-icon>
+      </a>
+    </div>
+    <div class="flex gap-2 mr-4 mt-4 w-1/3 justify-end h-full items-start">
       <img
         [src]="'/assets/icons/country-flag/pt-br-flag.png'"
         width="22px"
@@ -39,7 +63,7 @@
       />
       <button
         (click)="changeLang()"
-        class="w-8 bg-transparent border-2 border-gray-1 rounded-full relative"
+        class="w-8 h-4 bg-transparent border-2 border-gray-1 rounded-full relative"
       >
         <div
           [ngClass]="{

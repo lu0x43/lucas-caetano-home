@@ -10,7 +10,7 @@
 }
 
 .role-span {
-  @apply flex flex-col xs:text-xss md:text-2xl xs:font-400 md:font-700 md:absolute md:mt-2 md:h-7 xs:h-[14px] overflow-hidden;
+  @apply flex flex-col xs:text-xss md:text-2xl xs:font-400 md:font-700 md:absolute md:mt-2 md:h-7 xs:h-[14px] overflow-hidden text-gray-1;
 }
 
 span {
@@ -31,18 +31,6 @@ span::after {
   // border-left: 1px solid black;
   // animation: typing 4s steps(18) infinite;
 }
-
-// @keyframes typing {
-//   40% {
-//     left: 100%;
-//   }
-//   60% {
-//     left: 100%;
-//   }
-//   100% {
-//     left: 0;
-//   }
-// }
 
 .images {
   @apply md:h-[100px] md:w-[100px] xs:h-[30px] xs:w-[30px];
