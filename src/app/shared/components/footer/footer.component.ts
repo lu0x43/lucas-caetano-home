@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   info = {
-    email: 'contato@devlucascaetano.com',
+    email: 'lucas_caetano123@hotmail.com',
     phone: '+55(44)99708-7793',
     whatsapp: '5544997087793',
     linkedin: 'https://www.linkedin.com/in/dev-lucascaetano/',
