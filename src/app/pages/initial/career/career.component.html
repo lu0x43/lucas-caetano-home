@@ -8,11 +8,7 @@
       <div class="company">
         <ng-container *ngFor="let company of careerArray">
           <h2>
-            <a
-              class="hover:underline"
-              [href]="company.link"
-              target="_blank"
-            >
+            <a class="hover:underline" [href]="company.link" target="_blank">
               {{ company.title | translate }}
             </a>
           </h2>
@@ -42,15 +38,33 @@
                   [ngClass]="{ 'text-right': even }"
                 >
                   <label class="dateTime">{{ company.date | translate }}</label>
-                  <h2>
+                  <div
+                    class="title relative"
+                    [ngClass]="{
+                      'justify-end': even,
+                    }"
+                  >
                     <a
-                      class="hover:underline"
+                      class="title relative hover:underline"
                       [href]="company.link"
                       target="_blank"
                     >
-                      {{ company.title | translate }}
+                      <h2>
+                        {{ company.title | translate }}
+                      </h2>
+                      <img
+                        [src]="'/assets/icons/icon/' + company.icon + '.svg'"
+                        [ngClass]="{
+                          'h-6 ': company.icon == 'performa',
+                          'h-8':
+                            company.icon == 'atla-ensino' ||
+                            company.icon == 'icon-gray-blue' ||
+                            company.icon == 'icon-blue-gray',
+                          'ml-2': company.title == 'CAREER.FREELANCER'
+                        }"
+                      />
                     </a>
-                  </h2>
+                  </div>
                   <p>{{ company.text | translate }}</p>
                 </div>
               </div>

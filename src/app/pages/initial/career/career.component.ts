@@ -13,18 +13,21 @@ export class CareerComponent implements OnInit {
       date: 'CAREER.DATE_FREELANCER',
       text: 'CAREER.FREELANCER_TXT',
       link: 'https://devlucascaetano.com/',
+      icon: 'icon-gray-blue'
     },
     {
-      title: 'CAREER.PERFORMA_IT',
+      title: '',
       date: 'CAREER.DATE_PERFORMA',
       text: 'CAREER.PERFORMA_TXT',
       link: 'https://performait.com/',
+      icon: 'performa'
     },
     {
-      title: 'CAREER.ATLA',
+      title: '',
       date: 'CAREER.DATE_ATLA',
       text: 'CAREER.ATLA_TXT',
       link: 'https://atlaensino.com/',
+      icon: 'atla-ensino'
     },
   ];
 

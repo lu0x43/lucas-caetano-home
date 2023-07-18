@@ -10,7 +10,7 @@ h2 {
   @apply md:pl-4 xs:pl-1 md:pt-4 xs:pt-2;
 }
 p {
-  @apply md:text-base xs:text-xs;
+  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2;
 }
 
 .company {
@@ -55,4 +55,9 @@ p {
 
 .timeline .timeline-item .content.text-right {
   text-align: right;
+}
+
+.timeline .timeline-item .content .title {
+  display: flex;
+  align-items: center;
 }
