@@ -1,10 +1,63 @@
 <div class="w-full h-auto flex flex-col justify-center items-start">
   <ng-container>
-    <section>
-      <h2>
+    <section class="flex flex-col w-full md:items-center xs:items-start">
+      <h1>
         {{ 'CAREER.TITLE' | translate }}
-      </h2>
-      <p class="text-red font-700">{{ 'CONSTRUCTION' | translate }}</p>
+      </h1>
+
+      <div class="company">
+        <ng-container *ngFor="let company of careerArray">
+          <h2>
+            <a
+              class="hover:underline"
+              [href]="company.link"
+              target="_blank"
+            >
+              {{ company.title | translate }}
+            </a>
+          </h2>
+          <label class="dateTime">
+            {{ company.date | translate }}
+          </label>
+          <p class="paragraph">
+            {{ company.text | translate }}
+          </p>
+        </ng-container>
+      </div>
+
+      <div class="xs:hidden md:block w-full sticky">
+        <div class="mx-auto w-full h-full">
+          <div class="timeline">
+            <div class="border" style="right: 50%"></div>
+            <div class="border" style="left: 50%"></div>
+
+            <ng-container *ngFor="let company of careerArray; let even = even">
+              <div
+                class="timeline-item"
+                [ngClass]="{ 'left-timeline': even, 'right-timeline': !even }"
+              >
+                <div class="order-1 w-1/2"></div>
+                <div
+                  class="order-1 w-1/2 content"
+                  [ngClass]="{ 'text-right': even }"
+                >
+                  <label class="dateTime">{{ company.date | translate }}</label>
+                  <h2>
+                    <a
+                      class="hover:underline"
+                      [href]="company.link"
+                      target="_blank"
+                    >
+                      {{ company.title | translate }}
+                    </a>
+                  </h2>
+                  <p>{{ company.text | translate }}</p>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
     </section>
   </ng-container>
 </div>

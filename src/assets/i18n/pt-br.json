@@ -17,8 +17,9 @@
   },
   "NAVBAR": {
     "HOME": "Início",
-    "CAREER": "Carreira",
     "SKILLS": "Habilidades",
+    "CAREER": "Carreira",
+    "EDUCATION": "Formação",
     "ABOUTME": "Sobre mim",
     "PROJECTS": "Projetos"
   },
@@ -41,7 +42,19 @@
     "PARAGRAPH_3": "Sinta-se à vontade para explorar meu site e entrar em contato comigo. Estou pronto para colaborar e transformar suas ideias em realidade por meio de aplicações web funcionais, intuitivas e esteticamente atraentes. Vamos embarcar nessa jornada juntos!"
   },
   "CAREER": {
-    "TITLE": "Minha carreira"
+    "TITLE": "Minha carreira",
+
+    "FREELANCER": "Freelancer",
+    "DATE_FREELANCER":"Jan 2023 - atualmente",
+    "FREELANCER_TXT": "Em 2023 comecei minhas atuações como freelancer, realizando projetos web em minha cidade natal, onde desenvolvi sites para restaurantes, cervejarias e barbearias locais.",
+
+    "PERFORMA_IT": "Performa_IT",
+    "DATE_PERFORMA":"junho 2020 - junho 2023",
+    "PERFORMA_TXT": "Durante minha carreira na Performa_IT, desenvolvi novas funcionalidades e interfaces, e dei suporte a sistemas em produção. Utilizando habilidades sólidas em Angular, ReactJs, JavaScript, TypeScript, pincípios da Orientação a Objeto, SASS, TailwindCss, NPM, RxJs, Regex e Desenvolvimento Web Responsivo, sempre priorizei a aplicação correta e semântica das tecnologias envolvidas nos projetos. Adotando uma comunicação assertiva e não violenta, contribuí ativamente para a formação de novos talentos na empresa. Além disso durante minha passagem pelo time de suporte (sustentação), utilizei também C# para solucionar problemas e garantir a estabilidade dos sistemas.",
+
+    "ATLA": "Atla Ensino",
+    "DATE_ATLA":"Fev 2020 - junho 2020",
+    "ATLA_TXT": "Durante meu estágio na Atla Ensino, fui responsável por desenvolver novas funcionalidades e interfaces para escolas e colégios, garantindo sua estabilidade e desempenho. Trabalhei com HTML, CSS, JavaScript, AngularJs, Ionic, NodeJs e MongoDb."
   },
   "SKILLS": {
     "TITLE": "Habilidades e conhecimentos ",

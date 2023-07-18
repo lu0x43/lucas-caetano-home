@@ -9,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   navbarText: string[] = [
     'NAVBAR.HOME',
-    'NAVBAR.CAREER',
     'NAVBAR.SKILLS',
+    'NAVBAR.CAREER',
+    // 'NAVBAR.EDUCATION',
     'NAVBAR.ABOUTME',
     'NAVBAR.PROJECTS',
   ];

@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   habilities: string[] = [
     'C',
-    'CSharp',
     'Angular',
     'React',
     'JavaScript',
@@ -22,11 +21,13 @@ export class SkillsComponent implements OnInit {
     'Linux',
   ];
   learning: string[] = [
+    'Kotlin',
+    'swift',
+    'CSharp',
     'DotNET',
     'SQL',
-    'Kotlin',
     'RedHat',
-    'reverse-engineer',
+    // 'reverse-engineer',
   ];
   constructor() {}
   ngOnInit(): void {}

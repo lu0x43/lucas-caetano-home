@@ -17,8 +17,9 @@
   },
   "NAVBAR": {
     "HOME": "Home",
-    "CAREER": "Career",
     "SKILLS": "Skills",
+    "CAREER": "Career",
+    "EDUCATION": "Education",
     "ABOUTME": "About me",
     "PROJECTS": "Projects"
   },
@@ -41,7 +42,19 @@
     "PARAGRAPH_3": "Please feel free to explore my website and get in touch with me. I'm ready to collaborate and turn your ideas into reality through functional, intuitive, and aesthetically appealing web applications. Let's embark on this journey together!"
   },
   "CAREER": {
-    "TITLE": "My career"
+    "TITLE": "My career",
+
+    "FREELANCER": "Freelancer",
+    "DATE_FREELANCER": "june 2021 - present",
+    "FREELANCER_TXT": "In 2023, I started my work as a freelancer, carrying out web projects in my hometown, where I developed websites for local restaurants, breweries, and barbershops.",
+
+    "PERFORMA_IT": "Performa_IT",
+    "DATE_PERFORMA": "june 2020 - june 2023",
+    "PERFORMA_TXT":"During my career at Performa_IT, I developed new functionalities and interfaces, and provided support for systems in production. Using strong skills in Angular, ReactJs, JavaScript, TypeScript, Object-Oriented principles, SASS, TailwindCss, NPM, RxJs, Regex, and Responsive Web Development, I always prioritized the correct and semantic application of the technologies involved in the projects. Adopting assertive and non-violent communication, I actively contributed to the development of new talents within the company. Additionally, during my time in the support team, I also utilized C# to troubleshoot issues and ensure system stability.",
+
+    "ATLA": "Atla Ensino",
+    "DATE_ATLA": "feb 2020 - june 2020",
+    "ATLA_TXT": "During my internship at Atla Ensino, I was responsible for developing new features and interfaces for schools and colleges, ensuring their stability and performance. I worked with HTML, CSS, JavaScript, AngularJs, Ionic, NodeJs, and MongoDB."
   },
   "SKILLS": {
     "TITLE": " My skills",
