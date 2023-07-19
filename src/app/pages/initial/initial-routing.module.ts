@@ -5,16 +5,16 @@ import { InitialComponent } from './initial.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/inital',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
   {
-    path: 'initial',
+    path: 'home',
     component: InitialComponent,
   },
   {
     path: '**',
-    redirectTo: '/initial',
+    redirectTo: '/home',
     pathMatch: 'full',
   },
 ];
