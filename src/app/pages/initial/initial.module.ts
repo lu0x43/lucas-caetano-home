@@ -9,6 +9,7 @@ import { InitialRoutingModule } from './initial-routing.module';
 import { InitialComponent } from './initial.component';
 import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([], {
       anchorScrolling: 'enabled',
     }),
+    NgxPageScrollModule,
   ],
   exports: [
     InitialRoutingModule,

@@ -5,10 +5,6 @@
   @apply w-5 h-5 bg-gray-3 rounded-full absolute -top-1 -right-1;
 }
 
-// .roles {
-//   @apply w-max capitalize relative;
-// }
-
 .role-span {
   @apply flex xs:text-xs md:text-3xl xs:font-400 md:font-700 overflow-hidden text-gray-1;
 }

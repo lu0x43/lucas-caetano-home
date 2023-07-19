@@ -17,7 +17,9 @@ export class NavbarComponent implements OnInit {
   ];
   nameScroll: string[] = [];
 
-  constructor(private viewPortScroller: ViewportScroller) {}
+  constructor(
+    private viewPortScroller: ViewportScroller,
+  ) {}
 
   ngOnInit(): void {}
 

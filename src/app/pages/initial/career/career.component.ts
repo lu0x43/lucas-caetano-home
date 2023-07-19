@@ -12,7 +12,7 @@ export class CareerComponent implements OnInit {
       title: 'CAREER.FREELANCER',
       date: 'CAREER.DATE_FREELANCER',
       text: 'CAREER.FREELANCER_TXT',
-      link: 'https://devlucascaetano.com/',
+      link: 'https://www.workana.com/freelancer/398e6215d3fc8401c92799bb129bc1e9',
       icon: 'icon-gray-blue'
     },
     {

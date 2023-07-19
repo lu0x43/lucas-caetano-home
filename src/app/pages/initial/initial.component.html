@@ -5,7 +5,7 @@
     <app-navbar></app-navbar>
   </div>
   <div
-    class="flex flex-col xs:w-3/4 md:w-3/5 xs:px-6 md:px-10 md:my-8 xs:my-4 md:py-6 xs:py-2 bg-white shadow-center rounded-6"
+    class="flex flex-col scroll-transiction xs:w-3/4 md:w-3/5 xs:px-6 md:px-10 md:my-8 xs:my-4 md:py-6 xs:py-2 bg-white shadow-center rounded-6"
   >
     <div id="home">
       <app-home></app-home>
@@ -25,20 +25,17 @@
     <div id="projects">
       <app-projects></app-projects>
     </div>
-    <div class="btn-backtop">
-      <a (click)="backToTop()">
-        <div
-          class="md:text-xs xs:text-2xs text-gray-6 font-600 bg-gray rounded-30 px-1"
-        >
+    <div class="btn-backtop bg-gray rounded-30 px-2 shadow-base">
+      <a (click)="backToTop()" class="gap-2 ">
+        <div class="md:text-xs xs:text-2xs text-gray-6 font-600">
           {{ 'BACKTOTOP' | translate }}
         </div>
-        <img
-          src="../../../assets/icons/icon/back-top.svg"
-          alt="backtop"
-          [title]="'BACKTOTOP'"
-          width="24"
-          height="24"
-        />
+        <app-svg-icon
+          [src]="'./assets/icons/icon/back-top.svg'"
+          [width]="'24px'"
+          [height]="'24px'"
+          color="#053768"
+        ></app-svg-icon>
       </a>
     </div>
   </div>
