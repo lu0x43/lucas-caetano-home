@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
     'NAVBAR.HOME',
     'NAVBAR.SKILLS',
     'NAVBAR.CAREER',
-    // 'NAVBAR.EDUCATION',
+    'NAVBAR.EDUCATION',
     'NAVBAR.ABOUTME',
     'NAVBAR.PROJECTS',
   ];

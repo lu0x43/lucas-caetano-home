@@ -41,6 +41,11 @@
     "PARAGRAPH_2": "Throughout my journey, I have actively participated in the life cycles of several web projects. With a holistic understanding of the entire development process, I have gained broad and diverse experience. I have been recognized for my ability to create projects from scratch, as well as debug projects already in production. I am continuously updating my skills and staying abreast of market trends, exploring new technologies to offer efficient solutions.",
     "PARAGRAPH_3": "Please feel free to explore my website and get in touch with me. I'm ready to collaborate and turn your ideas into reality through functional, intuitive, and aesthetically appealing web applications. Let's embark on this journey together!"
   },
+  "SKILLS": {
+    "TITLE": " My skills",
+    "PRINCIPAL": "Principal",
+    "LEARNING": "Learning and studying"
+  },
   "CAREER": {
     "TITLE": "My career",
 
@@ -50,16 +55,14 @@
 
     "PERFORMA_IT": "Performa_IT",
     "DATE_PERFORMA": "june 2020 - june 2023",
-    "PERFORMA_TXT":"During my career at Performa_IT, I developed new systems from scratch, implemented new functionalities and interfaces, and provided support for systems in production. Leveraging strong skills in Angular, ReactJs, JavaScript, TypeScript, Object-Oriented principles, SASS, TailwindCss, NPM, RxJs, Regex, and Responsive Web Development, I always prioritized the correct and semantic application of the technologies involved in the projects. By adopting assertive and nonviolent communication, I actively contributed to the development of new talents within the company. Additionally, during my time in the support team (sustentation), I also utilized knowledge of C# to troubleshoot issues and ensure system stability.",
+    "PERFORMA_TXT": "During my career at Performa_IT, I developed new systems from scratch, implemented new functionalities and interfaces, and provided support for systems in production. Leveraging strong skills in Angular, ReactJs, JavaScript, TypeScript, Object-Oriented principles, SASS, TailwindCss, NPM, RxJs, Regex, and Responsive Web Development, I always prioritized the correct and semantic application of the technologies involved in the projects. By adopting assertive and nonviolent communication, I actively contributed to the development of new talents within the company. Additionally, during my time in the support team (sustentation), I also utilized knowledge of C# to troubleshoot issues and ensure system stability.",
 
     "ATLA": "Atla Ensino",
     "DATE_ATLA": "feb 2020 - june 2020",
     "ATLA_TXT": "During my internship at Atla Ensino, I was responsible for developing new features and interfaces for schools and colleges, ensuring their stability and performance. I worked with HTML, CSS, JavaScript, AngularJs, Ionic, NodeJs, and MongoDB."
   },
-  "SKILLS": {
-    "TITLE": " My skills",
-    "PRINCIPAL": "Principal",
-    "LEARNING": "Learning and studying"
+  "EDUCATION": {
+    "TITLE": " Formal education"
   },
   "ABOUT": {
     "TITLE": "More about me",

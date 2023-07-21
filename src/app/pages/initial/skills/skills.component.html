@@ -1,12 +1,12 @@
 <div class="w-full h-auto flex flex-col justify-center items-start">
   <ng-container>
-    <h2>
+    <h1>
       {{ 'SKILLS.TITLE' | translate }}
-    </h2>
+    </h1>
     <section>
-      <p>
+      <h2>
         {{ 'SKILLS.PRINCIPAL' | translate }}
-      </p>
+      </h2>
       <div class="display-imgs">
         <ng-container *ngFor="let image of habilities">
           <img
@@ -18,9 +18,9 @@
       </div>
     </section>
     <section>
-      <p>
+      <h2>
         {{ 'SKILLS.LEARNING' | translate }}
-      </p>
+      </h2>
       <div class="display-imgs">
         <ng-container *ngFor="let imgLearn of learning">
           <img

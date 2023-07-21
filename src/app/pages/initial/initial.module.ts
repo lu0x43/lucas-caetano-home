@@ -10,13 +10,15 @@ import { InitialComponent } from './initial.component';
 import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
     InitialComponent,
     HomeComponent,
-    CareerComponent,
     SkillsComponent,
+    CareerComponent,
+    EducationComponent,
     AboutComponent,
     ProjectsComponent,
   ],
@@ -33,8 +35,9 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     InitialRoutingModule,
     InitialComponent,
     HomeComponent,
-    CareerComponent,
     SkillsComponent,
+    CareerComponent,
+    EducationComponent,
     AboutComponent,
     ProjectsComponent,
   ],

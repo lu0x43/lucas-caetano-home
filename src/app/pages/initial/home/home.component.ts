@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  paragraphArray: string[] = [
+    'HOME.PARAGRAPH_1',
+    'HOME.PARAGRAPH_2',
+    'HOME.PARAGRAPH_3',
+  ];
   constructor() {}
   ngOnInit(): void {}
 }
