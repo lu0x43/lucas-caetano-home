@@ -5,7 +5,7 @@
     </h1>
 
     <ng-container *ngIf="data">
-      <ng-container *ngFor="let dataCompany of data">
+      <ng-container *ngFor="let dataCompany of translatedData">
         <div class="data">
           <a
             class="title hover:underline"
@@ -43,7 +43,7 @@
             <div class="border" [style.left]="centerLinePosition"></div>
 
             <div
-              *ngFor="let dataCompany of data; let even = even"
+              *ngFor="let dataCompany of translatedData; let even = even"
               class="timeline-item"
               [ngClass]="{ 'left-timeline': even, 'right-timeline': !even }"
             >

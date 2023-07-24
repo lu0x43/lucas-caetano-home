@@ -1,9 +1,5 @@
-import {
-  Component,
-  Input,
-  OnInit,
-} from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { Timeline } from 'src/app/core/model/timeline';
 
 @Component({
@@ -11,47 +7,69 @@ import { Timeline } from 'src/app/core/model/timeline';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss'],
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent implements OnInit, OnDestroy {
   @Input() title!: string;
   @Input() data!: Timeline[];
 
   centerLinePosition: string = '50%';
+  translatedData: Timeline[] = [];
+
+  private langChangeSubscription: any;
   constructor(private translateService: TranslateService) {}
 
   ngOnInit(): void {
-    console.log(this.data);
     this.translateArray();
+
+    this.langChangeSubscription = this.translateService.onLangChange.subscribe(
+      (event: LangChangeEvent) => {
+        this.translateArray();
+      }
+    );
+  }
+
+  ngOnDestroy(): void {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
   }
 
   translateArray(): void {
+    this.translatedData = [];
+
     this.data.map((item) => {
+      const translatedItem: Timeline = {
+        subTitle: '',
+        date: '',
+        text: '',
+        link: item.link,
+        icon: item.icon,
+      };
+
       if (item.subTitle) {
         this.translateService
           .get(item.subTitle)
-          .subscribe((translatedRole: string) => {
-            item.subTitle = translatedRole;
+          .subscribe((translatedStr: string) => {
+            translatedItem.subTitle = translatedStr;
           });
       }
-    });
 
-    this.data.map((item) => {
       if (item.text) {
         this.translateService
           .get(item.text)
-          .subscribe((translatedRole: string) => {
-            item.text = translatedRole;
+          .subscribe((translatedStr: string) => {
+            translatedItem.text = translatedStr;
           });
       }
-    });
 
-    this.data.map((item) => {
       if (item.date) {
         this.translateService
           .get(item.date)
-          .subscribe((translatedRole: string) => {
-            item.date = translatedRole;
+          .subscribe((translatedStr: string) => {
+            translatedItem.date = translatedStr;
           });
       }
+
+      this.translatedData.push(translatedItem);
     });
   }
 }
