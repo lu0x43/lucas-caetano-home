@@ -1,0 +1,84 @@
+<div class="flex w-full justify-center items-center">
+  <section class="flex flex-col w-full md:items-center xs:items-start">
+    <h1>
+      {{ title | translate }}
+    </h1>
+
+    <ng-container *ngIf="data">
+      <ng-container *ngFor="let dataCompany of data">
+        <div class="data">
+          <a
+            class="title hover:underline"
+            [href]="dataCompany.link"
+            target="_blank"
+          >
+            <h2>
+              {{ dataCompany.subTitle }}
+            </h2>
+            <img
+              [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
+              [ngClass]="{
+                'h-4 ': dataCompany.icon == 'performa',
+                'h-6':
+                  dataCompany.icon == 'atla-ensino' ||
+                  dataCompany.icon == 'icon-gray-blue' ||
+                  dataCompany.icon == 'icon-blue-gray',
+                'ml-2': dataCompany.subTitle == 'CAREER.FREELANCER'
+              }"
+            />
+          </a>
+          <label class="dateTime">
+            {{ dataCompany.date }}
+          </label>
+          <p class="paragraph">
+            {{ dataCompany.text }}
+          </p>
+        </div>
+      </ng-container>
+
+      <div class="w-full sticky xs:hidden md:block">
+        <div class="mx-auto w-full h-full">
+          <div class="timeline">
+            <div class="border" [style.right]="centerLinePosition"></div>
+            <div class="border" [style.left]="centerLinePosition"></div>
+
+            <div
+              *ngFor="let dataCompany of data; let even = even"
+              class="timeline-item"
+              [ngClass]="{ 'left-timeline': even, 'right-timeline': !even }"
+            >
+              <div class="order-1 w-1/2"></div>
+              <div
+                class="order-1 w-1/2 content"
+                [ngClass]="{ 'text-right': even }"
+              >
+                <label class="dateTime">{{ dataCompany.date }}</label>
+                <div class="title" [ngClass]="{ 'justify-end': even }">
+                  <a
+                    class="title hover:underline"
+                    [href]="dataCompany.link"
+                    target="_blank"
+                  >
+                    <h2>{{ dataCompany.subTitle }}</h2>
+                    <img
+                      [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
+                      [ngClass]="{
+                        'h-6': dataCompany.icon == 'performa',
+                        'h-8':
+                          dataCompany.icon == 'atla-ensino' ||
+                          dataCompany.icon == 'icon-gray-blue' ||
+                          dataCompany.icon == 'icon-blue-gray',
+                        'ml-2': dataCompany.subTitle == 'CAREER.FREELANCER'
+                      }"
+                    />
+                  </a>
+                </div>
+                <p [ngClass]="{ 'text-right': even }">{{ dataCompany.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </section>
+</div>

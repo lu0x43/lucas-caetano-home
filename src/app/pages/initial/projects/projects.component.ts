@@ -7,21 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   projects = [
-    {
-      name: 'Project 1',
-      image: 'assets/icons/image/project1.png',
-      tecnologies: ['React'],
-    },
+    // {
+    //   name: 'Project 1',
+    //   image: 'assets/icons/image/project1.png',
+    //   tecnologies: ['React'],
+    // },
     {
       name: 'Project 2',
       image: 'assets/icons/image/project2.png',
       tecnologies: ['Kotlin'],
     },
-    {
-      name: 'Project 3',
-      image: 'assets/icons/image/project3.png',
-      tecnologies: [],
-    },
+    // {
+    //   name: 'Project 3',
+    //   image: 'assets/icons/image/project3.png',
+    //   tecnologies: [],
+    // },
   ];
 
   constructor() {}

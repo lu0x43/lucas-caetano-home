@@ -1,37 +1,38 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Timeline } from 'src/app/core/model/timeline';
+
 @Component({
   selector: 'app-career',
   templateUrl: './career.component.html',
   styleUrls: ['./career.component.scss'],
 })
 export class CareerComponent implements OnInit {
+  title = 'CAREER.TITLE';
 
-  careerArray = [
+  careerArray: Timeline[] = [
     {
-      title: 'CAREER.FREELANCER',
+      subTitle: 'CAREER.FREELANCER',
       date: 'CAREER.DATE_FREELANCER',
       text: 'CAREER.FREELANCER_TXT',
       link: 'https://www.workana.com/freelancer/398e6215d3fc8401c92799bb129bc1e9',
-      icon: 'icon-gray-blue'
+      icon: 'icon-gray-blue',
     },
     {
-      title: '',
+      subTitle: '',
       date: 'CAREER.DATE_PERFORMA',
       text: 'CAREER.PERFORMA_TXT',
       link: 'https://performait.com/',
-      icon: 'performa'
+      icon: 'performa',
     },
     {
-      title: '',
+      subTitle: '',
       date: 'CAREER.DATE_ATLA',
       text: 'CAREER.ATLA_TXT',
       link: 'https://atlaensino.com/',
-      icon: 'atla-ensino'
+      icon: 'atla-ensino',
     },
   ];
-
-
 
   constructor() {}
   ngOnInit(): void {}

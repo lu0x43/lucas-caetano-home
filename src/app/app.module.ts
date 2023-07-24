@@ -3,13 +3,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { registerLocaleData } from '@angular/common';
 import localeEn from '@angular/common/locales/en';
 import localePt from '@angular/common/locales/pt';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { RouterModule } from '@angular/router';
 
 registerLocaleData(localeEn, 'en');
 registerLocaleData(localePt, 'pt-br');
@@ -31,19 +30,21 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient],
       },
     }),
-    // RouterModule.forRoot([], {
-    //   anchorScrolling: 'enabled',
-    //   // scrollPositionRestoration: 'enabled' || 'top',
-    // }),
-
-    // NgxMaskModule.forRoot(),
   ],
   providers: [
     {
       provide: LOCALE_ID,
       useValue: window.navigator.language.toLowerCase(),
     },
+    TranslateService
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private translateService: TranslateService) {
+    const availableLanguages = this.translateService.getLangs();
+
+    this.translateService.setDefaultLang('pt-br');
+    this.translateService.use('pt-br');
+  }
+}
