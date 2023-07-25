@@ -18,6 +18,7 @@
             <img
               [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
               [ngClass]="{
+                hidden: dataCompany.icon == '' || dataCompany.icon == undefined,
                 'h-4 ': dataCompany.icon == 'performa',
                 'h-6':
                   dataCompany.icon == 'atla-ensino' ||
@@ -63,6 +64,9 @@
                     <img
                       [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
                       [ngClass]="{
+                        hidden:
+                          dataCompany.icon == '' ||
+                          dataCompany.icon == undefined,
                         'h-6': dataCompany.icon == 'performa',
                         'h-8':
                           dataCompany.icon == 'atla-ensino' ||

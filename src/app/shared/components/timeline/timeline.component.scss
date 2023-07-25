@@ -5,7 +5,7 @@ h2 {
   @apply md:text-lg xs:text-sm font-700 text-blue-1;
 }
 p {
-  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2;
+  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2 text-justify;
 }
 
 .data {
