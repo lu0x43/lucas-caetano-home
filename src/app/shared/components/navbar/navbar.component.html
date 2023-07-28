@@ -1,14 +1,67 @@
 <div
-  class="w-full md:h-12 xs:h-6 flex flex-row justify-center items-center shadow-bottom bg-white"
+  class="w-full md:h-12 xs:h-7 flex flex-row justify-center items-center shadow-bottom bg-white"
 >
-  <ng-container *ngFor="let page of navbarText; let i = index">
-    <div class="flex flex-row h-full items-center">
-      <div
-        class="md:px-12 xs:px-4 xs:text-xss md:text-lg font-700 text-gray-9 hover:text-blue-2 hover:cursor-pointer hover:scale-90 whitespace-nowrap"
-        (click)="scrollComponent(page)"
-      >
-        {{ page | translate }}
-      </div>
+  <ng-container *ngIf="navbarPages">
+    <div
+      class="xs:flex md:hidden w-4/5 h-full justify-end items-center relative"
+    >
+      <button (click)="changeStateMenu()" class="menu">
+        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
+        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
+        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
+      </button>
+      <section *ngIf="openMenu" class="dialog">
+        <div
+          *ngFor="let page of navbarPages"
+          (click)="scrollComponent(page)"
+          class="w-full text-center border-solid border-b-[1px] border-blue"
+        >
+          {{ page | translate }}
+        </div>
+        <div class="flex justify-between w-full px-2 pt-2 ">
+          <a href="https://github.com/devLucasCaetano" target="_blank">
+            <app-svg-icon
+              [src]="'/assets/icons/icon/github.svg'"
+              [width]="'24px'"
+              [height]="'24px'"
+              color="#053768"
+            >
+            </app-svg-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dev-lucascaetano/"
+            target="_blank"
+          >
+            <app-svg-icon
+              [src]="'/assets/icons/icon/linkedin.svg'"
+              [width]="'24px'"
+              [height]="'24px'"
+              color="#053768"
+            >
+            </app-svg-icon>
+          </a>
+          <a href="https://www.instagram.com/dev.lucascaetano/" target="_blank">
+            <app-svg-icon
+              [src]="'/assets/icons/icon/instagram.svg'"
+              [width]="'24px'"
+              [height]="'24px'"
+              color="#053768"
+            >
+            </app-svg-icon>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="md:flex xs:hidden h-full items-center">
+      <ng-container *ngFor="let page of navbarPages">
+        <div
+          class="px-12 text-lg font-700 text-gray-9 hover:text-blue-2 hover:cursor-pointer hover:scale-90 whitespace-nowrap"
+          (click)="scrollComponent(page)"
+        >
+          {{ page | translate }}
+        </div>
+      </ng-container>
     </div>
   </ng-container>
 </div>

@@ -24,7 +24,7 @@ export class SkillsComponent implements OnInit {
   ];
   learning: string[] = [
     'Kotlin',
-    // 'swift',
+    // 'java',
     // 'CSharp',
     // 'ruby',
     'mysql',
