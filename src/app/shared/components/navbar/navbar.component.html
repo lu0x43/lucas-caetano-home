@@ -6,15 +6,15 @@
       class="xs:flex md:hidden w-4/5 h-full justify-end items-center relative"
     >
       <button (click)="changeStateMenu()" class="menu">
-        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
-        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
-        <div class="w-6 h-[3px] bg-blue-1 rounded-4"></div>
+        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
+        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
+        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
       </button>
       <section *ngIf="openMenu" class="dialog">
         <div
           *ngFor="let page of navbarPages"
           (click)="scrollComponent(page)"
-          class="w-full text-center border-solid border-b-[1px] border-blue"
+          class="w-full py-2 text-center border-solid border-b-[1px] border-blue"
         >
           {{ page | translate }}
         </div>
