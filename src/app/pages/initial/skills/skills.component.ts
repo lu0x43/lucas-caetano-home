@@ -23,10 +23,10 @@ export class SkillsComponent implements OnInit {
     'Linux',
   ];
   learning: string[] = [
-    'Kotlin',
+    // 'Kotlin',
     // 'java',
     // 'CSharp',
-    // 'ruby',
+    'ruby',
     'mysql',
     // 'SQL',
     'RedHat',

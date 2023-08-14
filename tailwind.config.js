@@ -83,9 +83,9 @@ module.exports = {
         3: "#40CD28",
       },
       red: {
-        DEFAULT: "#C11F1F",
-        1: "#EE5B4A",
-        2: "#C0392B",
+        DEFAULT: "#EE5B4A",
+        1: "#C0392B",
+        2: "#C11F1F",
       },
       black: "#000000",
       white: "#FFFFFF",

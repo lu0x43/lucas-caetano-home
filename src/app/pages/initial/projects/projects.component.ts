@@ -15,13 +15,9 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Project 2',
       image: 'assets/icons/image/project2.png',
-      tecnologies: ['Kotlin'],
+      tecnologies: ['ruby'],
+      color : 'red-1',
     },
-    // {
-    //   name: 'Project 3',
-    //   image: 'assets/icons/image/project3.png',
-    //   tecnologies: [],
-    // },
   ];
 
   constructor() {}
