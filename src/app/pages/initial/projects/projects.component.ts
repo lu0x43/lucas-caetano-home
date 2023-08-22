@@ -15,8 +15,8 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Project 2',
       image: 'assets/icons/image/project2.png',
-      tecnologies: ['ruby'],
-      color : 'red-1',
+      tecnologies: ['java'],
+      color : 'yellow',
     },
   ];
 
