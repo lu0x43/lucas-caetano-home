@@ -11,10 +11,23 @@ section {
 }
 
 .card {
-  @apply w-52 h-80 bg-gray shadow-base shadow-yellow rounded-10;
+  @apply w-52 h-80 bg-gray rounded-10;
   filter: blur(2px);
 }
 
 .align-right {
   justify-content: flex-end;
+}
+
+//card shadow
+.card-yellow {
+  @apply shadow-base shadow-yellow;
+}
+
+.card-blue {
+  @apply shadow-base shadow-blue;
+}
+
+.card-red {
+  @apply shadow-base shadow-red-2;
 }
