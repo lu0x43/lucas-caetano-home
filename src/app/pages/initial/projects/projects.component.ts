@@ -10,6 +10,12 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Project 1',
       image: 'assets/icons/image/project1.png',
+      tecnologies: ['Angular'],
+      color: 'red2',
+    },
+    {
+      name: 'Project 3',
+      image: 'assets/icons/image/project3.png',
       tecnologies: ['React'],
       color: 'blue2',
     },
@@ -19,12 +25,6 @@ export class ProjectsComponent implements OnInit {
       tecnologies: ['java'],
       color: 'yellow',
     },
-    // {
-    //   name: 'Project 3',
-    //   image: 'assets/icons/image/project3.png',
-    //   tecnologies: ['ruby'],
-    //   color: 'red',
-    // },
   ];
 
   constructor() {}

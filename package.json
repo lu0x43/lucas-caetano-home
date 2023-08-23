@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-mobile": "ng serve --host" ,
     "build": "ng build",
     "build-prod": "ng build --configuration production",
     "build-github-pages": "ng build --output-path docs --base-href /lucas-caetano-home/",

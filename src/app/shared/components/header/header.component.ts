@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   toggleMenu = false;
   nameHeader = 'Lucas Caetano';
 
-  rolesHeader: string[] = ['ROLES.WEB_DEV'];
+  rolesHeader: string[] = ['ROLES.WEB_DEV', 'ROLES.MOBILE_DEV'];
   currentRoleIndex: number = 0;
   currentRole: string = '';
   private readonly TYPE_INTERVAL = 100;

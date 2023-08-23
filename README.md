@@ -10,3 +10,6 @@ Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhos
 ## Build
 
 Run `ng build` or `npm build -prod` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Test local in your smartphone
+runnin with `ng serve --host your-ip` and access in your smartphone with `your-ip:4200`

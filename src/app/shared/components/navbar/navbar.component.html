@@ -1,24 +1,8 @@
-<div
-  class="w-full md:h-12 xs:h-7 flex flex-row justify-center items-center shadow-bottom bg-white"
->
-  <ng-container *ngIf="navbarPages">
-    <div
-      class="xs:flex md:hidden w-4/5 h-full justify-end items-center relative"
-    >
-      <button (click)="changeStateMenu()" class="menu">
-        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
-        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
-        <div class="w-6 h-1 bg-blue-1 rounded-4"></div>
-      </button>
-      <section *ngIf="openMenu" class="dialog">
-        <div
-          *ngFor="let page of navbarPages"
-          (click)="scrollComponent(page)"
-          class="w-full py-2 text-center border-solid border-b-[1px] border-blue"
-        >
-          {{ page | translate }}
-        </div>
-        <div class="flex justify-between w-full px-2 pt-2 ">
+<ng-container *ngIf="navbarPages">
+  <div class="navbar" [ngClass]="{ expanded: openMenu === true }">
+    <div class="xs:flex md:hidden w-4/5 h-full justify-end relative">
+      <div class="h-auto w-full flex justify-between py-2 absolute">
+        <div class="flex w-2/3 h-6 justify-between">
           <a href="https://github.com/devLucasCaetano" target="_blank">
             <app-svg-icon
               [src]="'/assets/icons/icon/github.svg'"
@@ -50,6 +34,20 @@
             </app-svg-icon>
           </a>
         </div>
+        <button (click)="changeStateMenu()" class="menu">
+          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
+          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
+          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
+        </button>
+      </div>
+      <section *ngIf="openMenu" class="expanded-menu">
+        <div
+          *ngFor="let page of navbarPages"
+          (click)="scrollComponent(page)"
+          class="sessao"
+        >
+          {{ page | translate }}
+        </div>
       </section>
     </div>
 
@@ -63,5 +61,5 @@
         </div>
       </ng-container>
     </div>
-  </ng-container>
-</div>
+  </div>
+</ng-container>
