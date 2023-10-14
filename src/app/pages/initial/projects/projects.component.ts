@@ -10,15 +10,15 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Project 1',
       image: 'assets/icons/image/project1.png',
-      tecnologies: ['Angular'],
+      tecnologies: ['angular'],
       color: 'red2',
     },
-    {
-      name: 'Project 3',
-      image: 'assets/icons/image/project3.png',
-      tecnologies: ['React'],
-      color: 'blue2',
-    },
+    // {
+    //   name: 'Project 3',
+    //   image: 'assets/icons/image/project3.png',
+    //   tecnologies: ['react'],
+    //   color: 'blue2',
+    // },
     {
       name: 'Project 2',
       image: 'assets/icons/image/project2.png',

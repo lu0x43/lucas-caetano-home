@@ -7,30 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   habilities: string[] = [
-    'C',
-    'Angular',
-    'React',
-    'JavaScript',
-    'TypeScript',
-    'HTML5',
-    'CSS3',
-    'SASS',
-    'TailwindCSS',
+    'c-language',
+    'angular',
+    'react',
+    'javascript',
+    'typescript',
+    'html5',
+    'css3',
+    'sass',
+    'tailwindcss',
     'nodejs',
     'mongodb',
-    'Git',
-    'Windows',
-    'Linux',
+    'git',
+    'windows',
+    'linux',
   ];
   learning: string[] = [
-    'Kotlin',
+    'kotlin',
     'java',
-    // 'CSharp',
-    // 'ruby',
     'mysql',
-    // 'SQL',
-    'RedHat',
-    // 'reverse-engineer',
+    'redhat',
   ];
   constructor() {}
   ngOnInit(): void {}
