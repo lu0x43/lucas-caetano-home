@@ -9,11 +9,14 @@
       </h2>
       <div class="display-imgs">
         <ng-container *ngFor="let image of habilities">
-          <img
-            [alt]="image"
-            [title]="image"
-            [src]="'../../../../assets/icons/icon/' + image + '.svg'"
-          />
+          <div class="img-container">
+            <img
+              [alt]="image"
+              [title]="image"
+              [src]="'../../../../assets/icons/icon/' + image + '.svg'"
+            />
+            <label>{{ image }}</label>
+          </div>
         </ng-container>
       </div>
     </section>
@@ -23,11 +26,14 @@
       </h2>
       <div class="display-imgs">
         <ng-container *ngFor="let imgLearn of learning">
-          <img
-            [alt]="imgLearn"
-            [title]="imgLearn"
-            [src]="'../../../../assets/icons/icon/' + imgLearn + '.svg'"
-          />
+          <div class="img-container">
+            <img
+              [alt]="imgLearn"
+              [title]="imgLearn"
+              [src]="'../../../../assets/icons/icon/' + imgLearn + '.svg'"
+            />
+            <label>{{ imgLearn }}</label>
+          </div>
         </ng-container>
       </div>
     </section>
