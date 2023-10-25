@@ -71,7 +71,6 @@ module.exports = {
         1: "#fedd66",
         2: "#fee899",
         3: "#fff4cc",
-        4: "#F18700",
       },
       orange: {
         DEFAULT: "#F18700",
@@ -100,9 +99,6 @@ module.exports = {
         7: "#29292e",
         8: "#202024",
         9: "#121214",
-      },
-      orange: {
-        DEFAULT: "#F18700",
       },
       background: "#FFFFFF",
     },

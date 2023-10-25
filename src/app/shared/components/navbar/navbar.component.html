@@ -8,7 +8,7 @@
               [src]="'/assets/icons/icon/github.svg'"
               [width]="'24px'"
               [height]="'24px'"
-              color="#053768"
+              color="#c4c4cc"
             >
             </app-svg-icon>
           </a>
@@ -20,7 +20,7 @@
               [src]="'/assets/icons/icon/linkedin.svg'"
               [width]="'24px'"
               [height]="'24px'"
-              color="#053768"
+              color="#c4c4cc"
             >
             </app-svg-icon>
           </a>
@@ -29,15 +29,15 @@
               [src]="'/assets/icons/icon/instagram.svg'"
               [width]="'24px'"
               [height]="'24px'"
-              color="#053768"
+              color="#c4c4cc"
             >
             </app-svg-icon>
           </a>
         </div>
         <button (click)="changeStateMenu()" class="menu">
-          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
-          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
-          <div class="w-8 h-[5px] bg-blue-1 rounded-4"></div>
+          <div class="w-8 h-[5px] bg-gray-8 rounded-4"></div>
+          <div class="w-8 h-[5px] bg-gray-8 rounded-4"></div>
+          <div class="w-8 h-[5px] bg-gray-8 rounded-4"></div>
         </button>
       </div>
       <section *ngIf="openMenu" class="expanded-menu">
@@ -54,7 +54,7 @@
     <div class="md:flex xs:hidden h-full items-center">
       <ng-container *ngFor="let page of navbarPages">
         <div
-          class="px-12 text-lg font-700 text-gray-9 hover:text-blue-2 hover:cursor-pointer hover:scale-90 whitespace-nowrap"
+          class="px-12 text-lg font-700 text-red-1 hover:text-red-2 hover:cursor-pointer hover:scale-90 whitespace-nowrap"
           (click)="scrollComponent(page)"
         >
           {{ page | translate }}

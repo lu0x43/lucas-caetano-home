@@ -1,9 +1,9 @@
 h1 {
-  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-9;
+  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-yellow-3;
 }
 
 p {
-  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2 text-gray-8;
+  @apply md:text-lg xs:text-base md:pt-3 xs:pt-2 text-gray;
 }
 .paragraph {
   @apply md:pl-4 xs:pl-1;
@@ -14,6 +14,6 @@ img {
   box-sizing: initial;
   border-radius: 50%;
   object-fit: cover;
-  @apply md:w-56 md:h-56 xs:w-36 xs:h-36 border-solid md:border-6 xs:border-3 md:p-[6px] xs:p-[3px] border-blue shadow-center overflow-hidden;
+  @apply md:w-56 md:h-56 xs:w-36 xs:h-36 border-solid md:border-6 xs:border-3 md:p-[6px] xs:p-[3px] border-red-2 shadow-center overflow-hidden;
 
 }

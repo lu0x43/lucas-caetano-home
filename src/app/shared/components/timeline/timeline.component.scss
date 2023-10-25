@@ -1,11 +1,11 @@
 h1 {
-  @apply md:text-2xl xs:text-base md:pt-8 xs:pt-1 md:px-10 xs:px-0 md:border-b-4 xs:border-0 border-blue border-solid font-700 text-gray-9;
+  @apply md:text-2xl xs:text-base md:pt-8 xs:pt-1 md:px-10 xs:px-0 md:border-b-4 xs:border-0 border-red-2 border-solid font-700 text-yellow-3;
 }
 h2 {
-  @apply md:text-lg xs:text-sm font-700 text-blue-1;
+  @apply md:text-xl xs:text-sm font-700 text-white;
 }
 p {
-  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2 text-justify;
+  @apply md:text-lg xs:text-base md:pt-3 xs:pt-2 text-gray text-justify;
 }
 
 .data {
@@ -28,7 +28,7 @@ p {
 }
 
 .dateTime {
-  @apply mb-3 md:text-xs xs:text-xss capitalize text-blue-1 font-bold;
+  @apply mb-3 md:text-xs xs:text-xss capitalize text-yellow-2 font-bold;
 }
 
 .timeline {
@@ -40,7 +40,7 @@ p {
 }
 
 .timeline .border {
-  @apply absolute w-[2px] h-full border-2 border-solid border-blue rounded-[1%];
+  @apply absolute w-[2px] h-full border-2 border-solid border-red-2 rounded-[1%];
 }
 
 .timeline .left-timeline {

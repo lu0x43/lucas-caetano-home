@@ -1,9 +1,9 @@
 h1 {
-  @apply md:text-xl font-700 text-gray-9 xs:text-base;
+  @apply md:text-2xl font-700 text-yellow-3 xs:text-base;
 }
 
 p {
-  @apply md:text-base xs:text-xs md:pt-3 xs:pt-2 text-gray-8;
+  @apply md:text-lg xs:text-base md:pt-3 xs:pt-2 text-gray;
 }
 
 .paragraph {

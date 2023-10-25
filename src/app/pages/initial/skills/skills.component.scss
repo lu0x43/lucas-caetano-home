@@ -1,9 +1,9 @@
 h1 {
-  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-gray-9;
+  @apply md:text-2xl xs:text-base md:pt-6 xs:pt-2 font-700 text-yellow-3;
 }
 
 h2 {
-  @apply md:pl-4 xs:pl-1 md:py-4 md:text-lg xs:text-xs xs:py-2 text-blue-1 font-700;
+  @apply md:pl-4 xs:pl-1 md:py-4 md:text-lg xs:text-xs xs:py-2 text-yellow-2 font-700;
 }
 
 section {
@@ -24,4 +24,8 @@ img {
   align-items: center;
 
   text-transform: capitalize;
+}
+
+.lbl-img{
+  @apply xs:text-xss md:text-xs rounded-30 bg-gray-3 text-gray-6 font-600 px-3 ;
 }

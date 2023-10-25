@@ -6,7 +6,7 @@
 }
 
 .role-span {
-  @apply flex xs:text-xs md:text-3xl xs:font-400 md:font-700 overflow-hidden text-gray-1;
+  @apply flex xs:text-sm md:text-3xl xs:font-400 md:font-700 overflow-hidden text-red-1;
 }
 
 .typing::after {
