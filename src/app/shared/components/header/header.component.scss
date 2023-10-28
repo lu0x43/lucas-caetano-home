@@ -22,22 +22,3 @@
     opacity: 1;
   }
 }
-
-.images {
-  @apply md:h-[100px] md:w-[100px] xs:h-[30px] xs:w-[30px];
-  filter: blur(2px);
-}
-.images:hover {
-  filter: blur(0px);
-}
-
-.images:nth-last-of-type(2) {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.images:nth-last-of-type(1) {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
