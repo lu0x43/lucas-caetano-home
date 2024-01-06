@@ -1,21 +1,22 @@
 .buttom-custom-br {
-  @apply w-5 h-5 bg-gray-3 rounded-full absolute -top-1 -left-1;
+  @apply absolute -left-1 -top-1 h-5 w-5 rounded-full bg-gray-3;
 }
 .buttom-custom-en {
-  @apply w-5 h-5 bg-gray-3 rounded-full absolute -top-1 -right-1;
+  @apply absolute -right-1 -top-1 h-5 w-5 rounded-full bg-gray-3;
 }
 
 .role-span {
-  @apply flex xs:text-sm md:text-3xl xs:font-400 md:font-700 overflow-hidden text-red-1;
+  @apply flex overflow-hidden text-red-1 xs:text-sm xs:font-400 md:text-3xl md:font-700;
 }
 
 .typing::after {
-  content: '|';
+  content: "|";
   animation: blink-caret 0s step-end infinite;
 }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {

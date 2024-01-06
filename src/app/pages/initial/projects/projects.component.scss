@@ -1,17 +1,17 @@
 h2 {
-  @apply md:text-xl xs:text-base md:pt-6 xs:pt-2 font-700 text-yellow-3;
+  @apply font-700 text-yellow-3 xs:pt-2 xs:text-base md:pt-6 md:text-xl;
 }
 
 p {
-  @apply md:pl-4 xs:pl-1 md:py-4 md:text-lg xs:text-xs xs:pt-2;
+  @apply xs:pl-1 xs:pt-2 xs:text-xs md:py-4 md:pl-4 md:text-lg;
 }
 
 section {
-  @apply w-full flex flex-wrap justify-center;
+  @apply flex w-full flex-wrap justify-center;
 }
 
 .card {
-  @apply w-52 h-80 bg-gray rounded-10;
+  @apply h-80 w-52 rounded-10 bg-gray;
   filter: blur(2px);
 }
 

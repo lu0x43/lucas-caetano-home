@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
     'NAVBAR.CAREER',
     'NAVBAR.EDUCATION',
     'NAVBAR.ABOUTME',
-    'NAVBAR.PROJECTS',
+    // 'NAVBAR.PROJECTS',
   ];
   nameScroll: string[] = [];
 

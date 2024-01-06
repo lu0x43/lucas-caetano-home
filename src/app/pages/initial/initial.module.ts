@@ -11,6 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { EducationComponent } from './education/education.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { EducationComponent } from './education/education.component';
       anchorScrolling: 'enabled',
     }),
     NgxPageScrollModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   exports: [
     InitialRoutingModule,

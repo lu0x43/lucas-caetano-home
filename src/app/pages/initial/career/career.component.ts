@@ -12,6 +12,12 @@ export class CareerComponent implements OnInit {
 
   careerArray: Timeline[] = [
     {
+      date: 'CAREER.DTT_DATE',
+      text: 'CAREER.DTT_TXT',
+      link: 'https://www2.deloitte.com/br/pt.html',
+      icon: 'deloitte',
+    },
+    {
       subTitle: 'CAREER.FREELANCER',
       date: 'CAREER.DATE_FREELANCER',
       text: 'CAREER.FREELANCER_TXT',

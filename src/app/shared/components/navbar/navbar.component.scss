@@ -1,12 +1,12 @@
 .navbar {
   width: 100%;
-  @apply md:h-14 xs:h-10;
+  @apply xs:h-10 md:h-14;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #121214;
+  background-color: #29292e;
 
   &.expanded {
     @apply h-auto;

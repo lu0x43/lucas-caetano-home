@@ -1,23 +1,23 @@
-<div class="w-full h-max relative">
+<div class="relative h-max w-full">
   <div
-    class="flex justify-between items-center px-5 py-5 xs:h-24 md:h-36 bg-gray-8 relative"
+    class="relative flex items-center justify-between bg-gray-8 px-5 py-5 xs:h-24 md:h-36"
   >
-    <div class="flex md:gap-5 xs:gap-3">
+    <div class="flex xs:gap-3 md:gap-5">
       <img
         src="../../../../assets/icons/icon/lucas-logo-claro.svg"
         width="40px"
       />
       <div class="flex flex-col justify-center">
         <div
-          class="w-max font-700 xs:text-lg md:text-6xl whitespace-nowrap text-gray"
+          class="w-max whitespace-nowrap font-700 text-gray xs:text-lg md:text-6xl"
         >
           {{ nameHeader }}
         </div>
       </div>
     </div>
 
-    <div class="md:w-1/3 xs:w-full xs:self-end md:self-center">
-      <div class="w-max capitalize relative">
+    <div class="xs:w-full xs:self-end md:w-1/3 md:self-center">
+      <div class="relative w-max capitalize">
         <div class="role-span">
           <span [class.typing]="currentRole !== ''">
             {{ currentRole }}
@@ -26,8 +26,10 @@
       </div>
     </div>
 
-    <div class="md:relative xs:absolute md:right-auto xs:right-2 md:top-auto xs:top-2 flex flex-col justify-between h-full items-end">
-      <div class="flex gap-2">
+    <div
+      class="flex h-full flex-col items-end justify-end xs:absolute xs:right-2 xs:top-2 md:relative md:right-auto md:top-auto"
+    >
+      <div class="fixed top-4 flex gap-2">
         <img
           [src]="'/assets/icons/country-flag/pt-br-flag.png'"
           width="22px"
@@ -35,7 +37,7 @@
         />
         <button
           (click)="changeLang()"
-          class="w-8 h-4 bg-transparent border-2 border-gray-1 rounded-full relative"
+          class="relative h-4 w-8 rounded-full border-2 border-gray-1 bg-transparent"
         >
           <div
             [ngClass]="{
@@ -51,7 +53,7 @@
         />
       </div>
 
-      <div class="flex md:gap-10 xs:gap-2 md:visible xs:invisible">
+      <div class="flex xs:invisible xs:gap-2 md:visible md:gap-10">
         <a href="https://github.com/devLucasCaetano" target="_blank">
           <app-svg-icon
             [src]="'/assets/icons/icon/github.svg'"

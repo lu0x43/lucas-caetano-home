@@ -49,8 +49,12 @@
   "CAREER": {
     "TITLE": "Minha carreira",
 
+    "DTT": "Deloitte Touche Tohmatsu",
+    "DTT_DATE": "nov 2023 - o momento",
+    "DTT_TXT": "Desenvolvedor Front-End na Deloitte, conduzi o desenvolvimento de novas funcionalidades para um projeto interno direcionado a clientes externos. Migração bem-sucedida do projeto de Razor JavaScript para o framework Angular com TypeScript. Correções de bugs em ambiente de produção. Uso avançado de Angular, Angular Material, RxJs para garantir um desenvolvimento seguro, responsivo e alinhado às melhores práticas.",
+
     "FREELANCER": "Freelancer",
-    "DATE_FREELANCER": "Jan 2023 - atualmente",
+    "DATE_FREELANCER": "desde 2023",
     "FREELANCER_TXT": "Em 2023 comecei minhas atuações como freelancer, realizando projetos web em minha cidade natal, onde desenvolvi sites para restaurantes, cervejarias e barbearias locais. Agora estou iniciando meus projetos como freelancer online, tendo meu perfil no site da Workana",
 
     "PERFORMA_IT": "Performa_IT",
@@ -62,7 +66,7 @@
     "ATLA_TXT": "Durante meu estágio na Atla Ensino, fui responsável por desenvolver novas funcionalidades e interfaces para escolas e colégios, garantindo sua estabilidade e desempenho. Trabalhei com HTML, CSS, JavaScript, AngularJs, Ionic, NodeJs e MongoDb."
   },
   "EDUCATION": {
-    "TITLE": "Formação Acadêmica",
+    "FORMAL_EDU": "Formação Acadêmica",
 
     "UTFPR": "UTFPR - Ciência da Computação",
     "DATE_UTFPR": "mar 2019 - o momento ",
@@ -70,7 +74,12 @@
 
     "ETEC": "ETEC - Técnico em Informática",
     "DATE_ETEC": "fev 2017 - jul 2018",
-    "ETEC_TXT": ""
+    "ETEC_TXT": "",
+
+    "COURSE":"Cursos extras",
+    "UH": "Universidade Hacker - Rafael Souza",
+    "DATE_UH": "Jan 2023 - o momento",
+    "UH_TXT": "No cursou aprendi sobre assembly da família Intel, arquivos poliglótas com exemplos em bootloader, ainda tendo mais diversos módulos para aprender sendo alguns deles sobre exploração de binários em C, zero day, falhas específicas para bug bountys e mais diversos ensinamentos lecionados pelo Rafael Souza"
   },
   "ABOUT": {
     "TITLE": "Mais sobre mim",

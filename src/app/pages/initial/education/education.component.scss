@@ -1,1 +1,12 @@
+.card-title {
+  @apply cursor-pointer font-bold;
+  font-size: 1.25rem;
 
+  transition: color 0.5s;
+  color: #e1e1e6;
+
+  &:hover {
+    transition: color 0.75s;
+    color: rgb(193, 31, 31);
+  }
+}

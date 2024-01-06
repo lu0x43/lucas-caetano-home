@@ -1,11 +1,11 @@
 h1 {
-  @apply md:text-2xl font-700 text-yellow-3 xs:text-base;
+  @apply font-700 text-yellow-3 xs:text-base md:text-2xl;
 }
 
 p {
-  @apply md:text-lg xs:text-base md:pt-3 xs:pt-2 text-gray;
+  @apply text-gray xs:pt-2 xs:text-base md:pt-3 md:text-lg;
 }
 
 .paragraph {
-  @apply md:pl-4 xs:pl-1 ;
+  @apply xs:pl-1 md:pl-4;
 }

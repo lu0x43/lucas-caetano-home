@@ -49,8 +49,12 @@
   "CAREER": {
     "TITLE": "My career",
 
+    "DTT": "Deloitte Touche Tohmatsu",
+    "DTT_DATE": "november 2023 - present",
+    "DTT_TXT": "Front-End Developer at Deloitte, led the development of new features for an internal project targeting external clients. Successfully migrated the project from Razor JavaScript to the Angular framework with TypeScript. Bug fixes in a production environment. Advanced use of Angular, Angular Material, RxJs to ensure secure, responsive development aligned with best practices.",
+
     "FREELANCER": "Freelancer",
-    "DATE_FREELANCER": "june 2021 - present",
+    "DATE_FREELANCER": "since 2023",
     "FREELANCER_TXT": "In 2023, I started working as a freelancer, undertaking web projects in my hometown, where I developed websites for local restaurants, breweries, and barbershops. Now I'm starting my online freelance projects, with my profile on the Workana website.",
 
     "PERFORMA_IT": "Performa_IT",
@@ -62,7 +66,7 @@
     "ATLA_TXT": "During my internship at Atla Ensino, I was responsible for developing new features and interfaces for schools and colleges, ensuring their stability and performance. I worked with HTML, CSS, JavaScript, AngularJs, Ionic, NodeJs, and MongoDB."
   },
   "EDUCATION": {
-    "TITLE": " Formal education",
+    "FORMAL_EDU": " Formal education",
 
     "UTFPR": "Federal University of Technology - Computer Science",
     "DATE_UTFPR": "mar 2019 - present",
@@ -70,7 +74,12 @@
 
     "ETEC": "Tecnical School - Computer Technician",
     "DATE_ETEC": "feb 2017 - jul 2018",
-    "ETEC_TXT": ""
+    "ETEC_TXT": "",
+
+    "COURSE": "Extra courses",
+    "UH": "Hacker University - Rafael Souza",
+    "DATE_UH": "Jan 2023 - o moment",
+    "UH_TXT": "In the course, I learned about Intel family assembly language, polylgot files with examples in bootloader, and there are several additional modules to explore. Some of these modules cover binary exploitation in C, zero-day vulnerabilities, specific flaws for bug bounties, and various teachings delivered by Rafael Souza."
   },
   "ABOUT": {
     "TITLE": "More about me",

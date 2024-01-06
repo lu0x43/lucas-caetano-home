@@ -1,12 +1,10 @@
 <div
-  class="w-full h-auto flex flex-col justify-center items-center bg-gray-8 overflow-hidden"
+  class="flex h-auto w-full flex-col items-center justify-center overflow-hidden bg-gray-8"
 >
   <div class="w-full">
     <app-navbar></app-navbar>
   </div>
-  <div
-    class="flex flex-col xs:w-4/5 md:w-3/4 md:my-14 xs:my-6 bg-gray-8"
-  >
+  <div class="flex flex-col bg-gray-8 xs:my-6 xs:w-4/5 md:my-14 md:w-3/4">
     <div id="home">
       <app-home></app-home>
     </div>
@@ -22,20 +20,20 @@
     <div id="aboutme">
       <app-about></app-about>
     </div>
-    <div id="projects">
+    <!-- <div id="projects">
       <app-projects></app-projects>
-    </div>
-    <div class="btn-backtop bg-gray rounded-30 px-2 shadow-base">
-      <a (click)="backToTop()" class="gap-2 ">
-        <div class="md:text-xs xs:text-2xs text-gray-6 font-600">
-          {{ 'BACKTOTOP' | translate }}
+    </div> -->
+    <div
+      class="btn-backtop rounded-30 bg-gray px-2 text-gray-6 shadow-base hover:bg-red hover:text-white"
+    >
+      <a (click)="backToTop()" class="gap-2">
+        <div class="font-600 xs:text-2xs md:text-xs">
+          {{ "BACKTOTOP" | translate }}
         </div>
-        <app-svg-icon
-          [src]="'./assets/icons/icon/arrow-top.svg'"
-          [width]="'24px'"
-          [height]="'24px'"
-          color="#053768"
-        ></app-svg-icon>
+        <mat-icon
+          fontIcon="expand_less"
+          class="font-bold text-red-2"
+        ></mat-icon>
       </a>
     </div>
   </div>

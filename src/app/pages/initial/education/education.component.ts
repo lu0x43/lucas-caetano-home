@@ -7,7 +7,9 @@ import { Timeline } from 'src/app/core/model/timeline';
   styleUrls: ['./education.component.scss'],
 })
 export class EducationComponent implements OnInit {
-  title = 'EDUCATION.TITLE';
+  expanded = false;
+
+  titleFomal = 'EDUCATION.FORMAL_EDU';
   educationArray: Timeline[] = [
     {
       subTitle: 'EDUCATION.UTFPR',
@@ -21,7 +23,21 @@ export class EducationComponent implements OnInit {
     },
   ];
 
+  titleCourse = 'EDUCATION.COURSE';
+  extrasArray: Timeline[] = [
+    {
+      subTitle: 'EDUCATION.UH',
+      date: 'EDUCATION.DATE_UH',
+      text: 'EDUCATION.UH_TXT',
+      link: 'https://hackingnaweb.com/',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleExpanded() {
+    this.expanded = !this.expanded;
+  }
 }

@@ -9,7 +9,7 @@
         <div class="data">
           <a
             class="title hover:underline"
-            [href]="dataCompany.link"
+            [href]="dataCompany?.link"
             target="_blank"
           >
             <h2>
@@ -19,7 +19,9 @@
               [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
               [ngClass]="{
                 hidden: dataCompany.icon == '' || dataCompany.icon == undefined,
-                'h-4 ': dataCompany.icon == 'performa',
+                'h-4 ':
+                  dataCompany.icon == 'performa' ||
+                  dataCompany.icon == 'deloitte',
                 'h-6':
                   dataCompany.icon == 'atla-ensino' ||
                   dataCompany.icon == 'lucas-logo-claro' ||
@@ -57,24 +59,31 @@
                 <div class="title" [ngClass]="{ 'justify-end': even }">
                   <a
                     class="title hover:underline"
-                    [href]="dataCompany.link"
+                    [href]="dataCompany?.link"
                     target="_blank"
                   >
                     <h2>{{ dataCompany.subTitle }}</h2>
-                    <img
-                      [src]="'/assets/icons/icon/' + dataCompany.icon + '.svg'"
-                      [ngClass]="{
-                        hidden:
-                          dataCompany.icon == '' ||
-                          dataCompany.icon == undefined,
-                        'h-6': dataCompany.icon == 'performa',
-                        'h-8':
-                          dataCompany.icon == 'atla-ensino' ||
-                          dataCompany.icon == 'lucas-logo-claro' ||
-                          dataCompany.icon == 'lucas-logo-escuro',
-                        'ml-2': dataCompany.subTitle == 'CAREER.FREELANCER'
-                      }"
-                    />
+                    <ng-container
+                      *ngIf="
+                        dataCompany?.icon && dataCompany?.icon != 'undefined'
+                      "
+                    >
+                      <img
+                        [src]="
+                          '/assets/icons/icon/' + dataCompany.icon + '.svg'
+                        "
+                        class="h-5"
+                        [ngClass]="{
+                          'h-6':
+                            dataCompany.icon == 'performa',
+                          'h-8':
+                            dataCompany.icon == 'atla-ensino' ||
+                            dataCompany.icon == 'lucas-logo-claro' ||
+                            dataCompany.icon == 'lucas-logo-escuro',
+                          'ml-2': dataCompany.subTitle == 'CAREER.FREELANCER'
+                        }"
+                      />
+                    </ng-container>
                   </a>
                 </div>
                 <p [ngClass]="{ 'text-right': even }">{{ dataCompany.text }}</p>
