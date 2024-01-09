@@ -8,42 +8,56 @@
         ></app-timeline>
       </span>
       <div class="w-4/5">
-        <mat-card class="flex w-full rounded-4">
-          <mat-card-content
-            class="flex items-center justify-start rounded-t-4 bg-gray-7"
-          >
-            <button
-              (click)="toggleExpanded()"
-              class="flex w-full justify-between"
-            >
-              <div class="flex items-center text-center">
+        <mat-card class="card">
+          <mat-card-content class="card-content">
+            <button (click)="toggleExpanded()" class="card-content-btn">
+              <div class="card-content-btn-box">
                 <mat-icon
                   fontIcon="arrow_right"
-                  class="font-bold text-red-2"
+                  class="card-content-btn-box-icon"
                 ></mat-icon>
-                <label
-                  class="card-title"
-                >
+                <label class="card-content-btn-box-title">
                   {{ "EDUCATION.COURSE" | translate }}
                 </label>
               </div>
               <mat-icon
                 *ngIf="!expanded"
                 fontIcon="expand_more"
-                class="font-bold text-gray"
+                class="card-content-btn-icon"
               ></mat-icon>
               <mat-icon
                 *ngIf="expanded"
                 fontIcon="arrow_drop_up"
-                class="font-bold text-gray"
+                class="card-content-btn-icon"
               ></mat-icon>
             </button>
           </mat-card-content>
         </mat-card>
         <ng-container *ngIf="expanded">
-          <mat-card class="flex w-full flex-col">
-            <mat-card-content class="rounded-b-4 bg-gray-6">
-              text
+          <mat-card class="card-expanded" [class.open]="expanded">
+            <mat-card-content
+              *ngFor="let course of translatedData"
+              class="rounded-b-4 bg-gray-6 text-gray-1 xs:text-sm md:text-base"
+            >
+              <mat-card-header>
+                <mat-card-title class="text-gray-1">
+                  <a
+                    class="hover:underline"
+                    [href]="course?.link"
+                    target="_blank"
+                  >
+                    {{ course.subTitle }}
+                  </a>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <label class="text-xs text-red">
+                  {{ course.date }}
+                </label>
+                <p class="text-base text-gray-1">
+                  {{ course.text }}
+                </p>
+              </mat-card-content>
             </mat-card-content>
           </mat-card>
         </ng-container>

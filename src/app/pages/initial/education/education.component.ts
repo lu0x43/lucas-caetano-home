@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Timeline } from 'src/app/core/model/timeline';
 
 @Component({
@@ -6,7 +7,7 @@ import { Timeline } from 'src/app/core/model/timeline';
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent implements OnInit, OnDestroy {
   expanded = false;
 
   titleFomal = 'EDUCATION.FORMAL_EDU';
@@ -32,12 +33,62 @@ export class EducationComponent implements OnInit {
       link: 'https://hackingnaweb.com/',
     },
   ];
+  translatedData: Timeline[] = [];
+  private langChangeSubscription: any;
 
-  constructor() {}
+  constructor(private translateService: TranslateService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.translateArray();
+  }
+
+  ngOnDestroy(): void {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
+  }
 
   toggleExpanded() {
     this.expanded = !this.expanded;
+  }
+
+  translateArray(): void {
+    this.translatedData = [];
+
+    this.extrasArray.map((item) => {
+      const translatedItem: Timeline = {
+        subTitle: '',
+        date: '',
+        text: '',
+        link: item.link,
+        icon: item.icon,
+      };
+
+      if (item.subTitle) {
+        this.translateService
+          .get(item.subTitle)
+          .subscribe((translatedStr: string) => {
+            translatedItem.subTitle = translatedStr;
+          });
+      }
+
+      if (item.text) {
+        this.translateService
+          .get(item.text)
+          .subscribe((translatedStr: string) => {
+            translatedItem.text = translatedStr;
+          });
+      }
+
+      if (item.date) {
+        this.translateService
+          .get(item.date)
+          .subscribe((translatedStr: string) => {
+            translatedItem.date = translatedStr;
+          });
+      }
+
+      this.translatedData.push(translatedItem);
+    });
   }
 }

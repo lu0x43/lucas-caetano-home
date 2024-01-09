@@ -1,12 +1,57 @@
-.card-title {
-  @apply cursor-pointer font-bold;
-  font-size: 1.25rem;
+.mat-mdc-card {
+  background-color: transparent;
+  border: none;
+}
 
-  transition: color 0.5s;
-  color: #e1e1e6;
+.card {
+  @apply flex w-full rounded-4;
 
-  &:hover {
-    transition: color 0.75s;
-    color: rgb(193, 31, 31);
+  &-content {
+    @apply flex items-center justify-start rounded-t-4 bg-gray-7;
+
+    &-btn {
+      @apply flex w-full justify-between;
+
+      &:hover {
+        .card-content-btn-box-title {
+          transition: color 0.9s;
+          color: rgb(193, 31, 31);
+        }
+      }
+
+      &-box {
+        @apply flex items-center text-center;
+
+        &-icon {
+          @apply font-bold text-red-2;
+        }
+
+        &-title {
+          @apply cursor-pointer font-bold xs:text-sm md:text-xl;
+
+          transition: color 0.75s;
+          color: #e1e1e6;
+        }
+      }
+
+      &-icon {
+        @apply font-bold text-gray;
+      }
+    }
   }
 }
+
+.card-expanded {
+  @apply flex w-full flex-col rounded-b-4;
+  // max-height: 0;
+  // overflow: hidden;
+  // opacity: 0;
+  // transition:
+  //   max-height 2.5s ease-in-out,
+  //   opacity 2.5s ease-in-out;
+}
+
+// .card-expanded.open {
+//   max-height: 1000px;
+//   opacity: 1;
+// }
