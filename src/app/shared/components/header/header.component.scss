@@ -1,3 +1,10 @@
+.change-lang {
+  @apply fixed top-4 flex gap-2;
+}
+.btn-toggle-lang {
+  @apply relative h-4 w-8 rounded-full border-2 border-gray-1 bg-transparent;
+}
+
 .buttom-custom-br {
   @apply absolute -left-1 -top-1 h-5 w-5 rounded-full bg-gray-3;
 }
@@ -22,4 +29,8 @@
   50% {
     opacity: 1;
   }
+}
+
+.toggle-theme {
+  @apply absolute bottom-6 flex gap-2;
 }

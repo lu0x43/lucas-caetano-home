@@ -2,17 +2,26 @@
   <div
     class="relative flex items-center justify-between bg-gray-8 px-5 py-5 xs:h-24 md:h-36"
   >
-    <div class="flex xs:gap-3 md:gap-5">
-      <img
-        src="../../../../assets/icons/icon/lucas-logo-vermelho.svg"
-        width="40px"
-      />
-      <div class="flex flex-col justify-center">
-        <div
-          class="w-max whitespace-nowrap font-700 text-gray xs:text-lg md:text-6xl"
-        >
-          {{ nameHeader }}
+    <div class="flex h-full flex-col">
+      <div class="flex xs:gap-3 md:gap-5">
+        <img
+          src="../../../../assets/icons/icon/lucas-logo-vermelho.svg"
+          width="40px"
+        />
+        <div class="flex flex-col justify-center">
+          <div
+            class="w-max whitespace-nowrap font-700 text-gray xs:text-lg md:text-6xl"
+          >
+            {{ nameHeader }}
+          </div>
         </div>
+      </div>
+      <div class="toggle-theme">
+        <mat-slide-toggle
+          [checked]="isDarkTheme"
+          (change)="toggleTheme()"
+          [color]="isDarkTheme ? 'accent' : 'primary'"
+        ></mat-slide-toggle>
       </div>
     </div>
 
@@ -29,16 +38,13 @@
     <div
       class="flex h-full flex-col items-end justify-end xs:absolute xs:right-2 xs:top-2 md:relative md:right-auto md:top-auto"
     >
-      <div class="fixed top-4 flex gap-2">
+      <div class="change-lang">
         <img
           [src]="'/assets/icons/country-flag/pt-br-flag.png'"
           width="22px"
           height="auto"
         />
-        <button
-          (click)="changeLang()"
-          class="relative h-4 w-8 rounded-full border-2 border-gray-1 bg-transparent"
-        >
+        <button (click)="changeLang()" class="btn-toggle-lang">
           <div
             [ngClass]="{
               'buttom-custom-br': translateService.currentLang === 'pt-br',
