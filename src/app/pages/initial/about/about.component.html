@@ -1,22 +1,22 @@
-<div class="w-full h-auto flex flex-col justify-center items-center">
+<div class="flex h-auto w-full flex-col items-center justify-center">
   <ng-container>
     <section>
       <h1>
-        {{ 'ABOUT.TITLE' | translate }}
+        {{ "ABOUT.TITLE" | translate }}
       </h1>
-      <div class="xs:pt-3 md:pt-6 md:flex justify-around">
+      <div class="justify-around xs:pt-3 md:flex md:pt-6">
         <div class="flex items-center justify-center">
           <ng-container *ngFor="let profile of imagesProfile">
             <img
               class="profile-image"
-              [src]="'../../../../assets/icons/' + profile + '.jpg'"
+              [src]="'https://github.com/devLucasCaetano.png'"
               alt="img-profile"
             />
           </ng-container>
         </div>
       </div>
       <p class="paragraph" *ngFor="let paragraph of paragraphArray">
-        {{ paragraph| translate }}
+        {{ paragraph | translate }}
       </p>
     </section>
   </ng-container>
