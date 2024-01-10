@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
   toggleMenu = false;
   nameHeader = 'Lucas Caetano';
 
+  isDarkTheme = true;
+
   rolesHeader: string[] = ['ROLES.WEB_DEV', 'ROLES.MOBILE_DEV'];
   currentRoleIndex: number = 0;
   currentRole: string = '';
@@ -24,6 +26,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.typeWriter();
+  }
+
+  toggleTheme(): void {
+    this.isDarkTheme = !this.isDarkTheme;
   }
 
   changeLang(): void {

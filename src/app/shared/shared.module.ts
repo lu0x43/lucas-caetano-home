@@ -6,7 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -15,7 +15,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     SvgIconComponent,
     TimelineComponent,
   ],
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, MatSlideToggleModule],
   exports: [
     TranslateModule,
     HeaderComponent,
