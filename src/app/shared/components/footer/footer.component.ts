@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   info = {
     email: 'lucas_caetano123@hotmail.com',
-    phone: '+55(44)99708-7793',
+    // phone: '+55(44)99708-7793',
     whatsapp: '5544997087793',
     linkedin: 'https://www.linkedin.com/in/dev-lucascaetano/',
     github: 'https://github.com/devLucasCaetano',
-    instagram: 'https://www.instagram.com/dev.lucascaetano/',
+    // instagram: 'https://www.instagram.com/dev.lucascaetano/',
   };
 
   constructor() {}
