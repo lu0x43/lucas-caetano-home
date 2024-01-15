@@ -14,5 +14,5 @@ img {
   box-sizing: initial;
   border-radius: 50%;
   object-fit: cover;
-  @apply overflow-hidden border-solid border-red-2 shadow-center xs:h-36 xs:w-36 xs:border-3 xs:p-[3px] md:h-56 md:w-56 md:border-6 md:p-[6px];
+  @apply overflow-hidden border-solid border-red-2 shadow-center xs:h-40 xs:w-40 xs:border-3 xs:p-[3px] md:h-64 md:w-64 md:border-6 md:p-[6px];
 }
