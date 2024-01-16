@@ -16,12 +16,13 @@ export class HeaderComponent implements OnInit {
   rolesHeader: string[] = ['ROLES.WEB_DEV', 'ROLES.MOBILE_DEV'];
   currentRoleIndex: number = 0;
   currentRole: string = '';
+
   private readonly TYPE_INTERVAL = 100;
   private readonly DELETE_INTERVAL = 50;
 
   constructor(
     public translateService: TranslateService,
-    private authenticationService: AuthService
+    private authenticationService: AuthService,
   ) {}
 
   ngOnInit(): void {

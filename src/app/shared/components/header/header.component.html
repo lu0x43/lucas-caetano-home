@@ -17,11 +17,13 @@
         </div>
       </div>
       <div class="toggle-theme">
+        <img src="/assets/icons/icon/bluehat.svg" width="28px" />
         <mat-slide-toggle
           [checked]="isDarkTheme"
           (change)="toggleTheme()"
-          [color]="isDarkTheme ? 'accent' : 'primary'"
+          hideIcon="true"
         ></mat-slide-toggle>
+        <img src="/assets/icons/icon/redhat.svg" width="28px " />
       </div>
     </div>
 
