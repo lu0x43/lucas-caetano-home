@@ -17,13 +17,13 @@ export class CareerComponent implements OnInit {
       link: 'https://www2.deloitte.com/br/pt.html',
       icon: 'deloitte',
     },
-    {
-      subTitle: 'CAREER.FREELANCER',
-      date: 'CAREER.DATE_FREELANCER',
-      text: 'CAREER.FREELANCER_TXT',
-      link: 'https://www.workana.com/freelancer/398e6215d3fc8401c92799bb129bc1e9',
-      icon: 'lucas-logo-vermelho',
-    },
+    // {
+    //   subTitle: 'CAREER.FREELANCER',
+    //   date: 'CAREER.DATE_FREELANCER',
+    //   text: 'CAREER.FREELANCER_TXT',
+    //   link: 'https://www.workana.com/freelancer/398e6215d3fc8401c92799bb129bc1e9',
+    //   icon: 'lucas-logo-vermelho',
+    // },
     {
       subTitle: '',
       date: 'CAREER.DATE_PERFORMA',

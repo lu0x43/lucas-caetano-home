@@ -79,5 +79,19 @@ export class TimelineComponent implements OnInit, OnDestroy {
   sortData(event: { active: string; direction: 'asc' | 'desc' }): void {
     this.sortKey = event.active;
     this.sortDirection = event.direction;
+
+    const compare = (a: any, b: any) => {
+      const valueA = a[this.sortKey];
+      const valueB = b[this.sortKey];
+
+      if (this.sortDirection === 'asc') {
+        return valueA.localeCompare(valueB);
+      } else {
+        return valueB.localeCompare(valueA);
+      }
+    };
+
+    this.translatedData.sort(compare);
+    console.log('translatedData after sorting:', this.translatedData);
   }
 }
