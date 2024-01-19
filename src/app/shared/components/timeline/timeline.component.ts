@@ -14,6 +14,9 @@ export class TimelineComponent implements OnInit, OnDestroy {
   centerLinePosition: string = '50%';
   translatedData: Timeline[] = [];
 
+  sortKey: string = 'subTitle';
+  sortDirection: 'asc' | 'desc' = 'asc';
+
   private langChangeSubscription: any;
   constructor(private translateService: TranslateService) {}
 
@@ -23,7 +26,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
     this.langChangeSubscription = this.translateService.onLangChange.subscribe(
       (event: LangChangeEvent) => {
         this.translateArray();
-      }
+      },
     );
   }
 
@@ -71,5 +74,10 @@ export class TimelineComponent implements OnInit, OnDestroy {
 
       this.translatedData.push(translatedItem);
     });
+  }
+
+  sortData(event: { active: string; direction: 'asc' | 'desc' }): void {
+    this.sortKey = event.active;
+    this.sortDirection = event.direction;
   }
 }

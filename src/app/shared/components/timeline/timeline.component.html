@@ -1,8 +1,19 @@
-<div class="flex w-full justify-center items-center">
-  <section class="flex flex-col w-full md:items-center xs:items-start">
-    <h1>
-      {{ title | translate }}
-    </h1>
+<div class="flex w-full items-center justify-center">
+  <section class="flex w-full flex-col xs:items-start md:items-center">
+    <div class="h-title">
+      <h1>
+        {{ title | translate }}
+      </h1>
+      <button
+        class="flex items-center justify-center"
+        (click)="sortData({ active: 'subTitle', direction: sortDirection })"
+      >
+        <mat-icon
+          fontIcon="swap_vert"
+          class="text-gray-3 hover:text-red-2"
+        ></mat-icon>
+      </button>
+    </div>
 
     <ng-container *ngIf="data">
       <ng-container *ngFor="let dataCompany of translatedData">
@@ -39,8 +50,8 @@
         </div>
       </ng-container>
 
-      <div class="w-full sticky xs:hidden md:block">
-        <div class="mx-auto w-full h-full">
+      <div class="sticky w-full xs:hidden md:block">
+        <div class="mx-auto h-full w-full">
           <div class="timeline">
             <div class="border" [style.right]="centerLinePosition"></div>
             <div class="border" [style.left]="centerLinePosition"></div>
@@ -52,7 +63,7 @@
             >
               <div class="order-1 w-1/2"></div>
               <div
-                class="order-1 w-1/2 content"
+                class="content order-1 w-1/2"
                 [ngClass]="{ 'text-right': even }"
               >
                 <label class="dateTime">{{ dataCompany.date }}</label>
@@ -74,8 +85,7 @@
                         "
                         class="h-5"
                         [ngClass]="{
-                          'h-6':
-                            dataCompany.icon == 'performa',
+                          'h-6': dataCompany.icon == 'performa',
                           'h-8':
                             dataCompany.icon == 'atla-ensino' ||
                             dataCompany.icon == 'lucas-logo-azul' ||
