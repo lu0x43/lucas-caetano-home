@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
@@ -16,7 +17,13 @@ import { MatIconModule } from '@angular/material/icon';
     SvgIconComponent,
     TimelineComponent,
   ],
-  imports: [CommonModule, TranslateModule, MatSlideToggleModule, MatIconModule],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    MatSlideToggleModule,
+    MatSortModule,
+    MatIconModule,
+  ],
   exports: [
     TranslateModule,
     HeaderComponent,

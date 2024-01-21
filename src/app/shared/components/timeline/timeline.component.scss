@@ -1,11 +1,15 @@
 h1 {
-  @apply border-solid border-red-2 font-700 text-yellow-3 xs:border-0 xs:px-0 xs:pt-1 xs:text-base md:border-b-4 md:px-10 md:pt-8 md:text-2xl;
+  @apply mb-0 font-700  text-yellow-3  xs:text-base md:text-2xl;
 }
 h2 {
-  @apply font-700 text-white xs:text-sm md:text-xl;
+  @apply mb-0 font-700 text-white xs:text-sm md:text-xl;
 }
 p {
   @apply text-justify text-gray xs:pt-2 xs:text-base md:pt-3 md:text-lg;
+}
+
+.h-title {
+  @apply flex items-center gap-1 border-solid border-red-2 text-center xs:border-0 xs:px-0 xs:pt-1 md:border-b-4 md:px-10 md:pt-8;
 }
 
 .data {
@@ -16,6 +20,7 @@ p {
   display: flex;
   align-items: center;
   margin-top: 1rem;
+  gap: 0.5rem;
 }
 
 .data .title::before {
@@ -69,5 +74,5 @@ p {
 
 .timeline .timeline-item .content .title {
   display: flex;
-  // align-items: center;
+  gap: 0.5rem;
 }
