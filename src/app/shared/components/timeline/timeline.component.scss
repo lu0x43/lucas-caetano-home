@@ -1,5 +1,5 @@
 h1 {
-  @apply mb-0 font-700  text-yellow-3  xs:text-base md:text-2xl;
+  @apply mb-0 font-700  text-beige-1  xs:text-base md:text-2xl;
 }
 h2 {
   @apply mb-0 font-700 text-white xs:text-sm md:text-xl;
@@ -33,7 +33,7 @@ p {
 }
 
 .dateTime {
-  @apply mb-3 font-bold capitalize text-yellow-2 xs:text-xss md:text-xs;
+  @apply mb-3 font-bold capitalize text-beige xs:text-xss md:text-xs;
 }
 
 .timeline {

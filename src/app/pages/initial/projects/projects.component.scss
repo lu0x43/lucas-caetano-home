@@ -1,5 +1,5 @@
 h2 {
-  @apply font-700 text-yellow-3 xs:pt-2 xs:text-base md:pt-6 md:text-xl;
+  @apply font-700 text-beige-1 xs:pt-2 xs:text-base md:pt-6 md:text-xl;
 }
 
 p {
@@ -21,11 +21,11 @@ section {
 
 //card shadow
 .card-yellow {
-  @apply shadow-base shadow-yellow;
+  @apply shadow-base shadow-yellow-1;
 }
 
 .card-blue {
-  @apply shadow-base shadow-blue;
+  @apply shadow-base shadow-blue-2;
 }
 
 .card-red {

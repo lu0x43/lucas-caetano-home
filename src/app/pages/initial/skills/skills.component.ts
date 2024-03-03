@@ -24,7 +24,7 @@ export class SkillsComponent implements OnInit {
   ];
   learning: string[] = [
     'mysql',
-    'redhat',
+    'RedHat',
   ];
   constructor() {}
   ngOnInit(): void {}
