@@ -9,9 +9,9 @@ import { AuthService } from 'src/app/core/services/authenticator/authservice.ser
 })
 export class HeaderComponent implements OnInit {
   toggleMenu = false;
-  nameHeader = 'Lucas Caetano';
+  readonly nameHeader = 'Lucas Caetano';
 
-  isDarkTheme = true;
+  isDarkRedTheme = true;
 
   rolesHeader: string[] = ['ROLES.WEB_DEV', 'ROLES.MOBILE_DEV'];
   currentRoleIndex: number = 0;
@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleTheme(): void {
-    this.isDarkTheme = !this.isDarkTheme;
+    this.isDarkRedTheme = !this.isDarkRedTheme;
   }
 
   changeLang(): void {

@@ -16,14 +16,24 @@
           </div>
         </div>
       </div>
-      <div class="toggle-theme">
+      <div class="absolute bottom-6 flex items-center gap-2">
         <img src="/assets/icons/icon/bluehat.svg" width="28px" />
-        <mat-slide-toggle
-          [checked]="isDarkTheme"
-          (change)="toggleTheme()"
-          hideIcon="true"
-        ></mat-slide-toggle>
-        <img src="/assets/icons/icon/redhat.svg" width="28px " />
+        <button
+          (click)="toggleTheme()"
+          class="relative h-4 w-8 rounded-full"
+          [ngClass]="{
+            'bg-red': isDarkRedTheme,
+            'bg-blue-2': !isDarkRedTheme
+          }"
+        >
+          <div
+            [ngClass]="{
+              'light-blue': !isDarkRedTheme,
+              'dark-red': isDarkRedTheme
+            }"
+          ></div>
+        </button>
+        <img src="/assets/icons/icon/RedHat.svg" width="28px " />
       </div>
     </div>
 
