@@ -17,8 +17,16 @@
         </div>
       </div>
       <div class="absolute bottom-6 flex items-center gap-2">
-        <img src="/assets/icons/icon/bluehat.svg" width="28px" />
+        <!-- todo: choose theme blue after complete feature -->
+        <img
+          (click)="chooseTheme('red')"
+          class="cursor-pointer"
+          src="/assets/icons/icon/bluehat.svg"
+          width="28px"
+        />
         <button
+          matTooltip="IN CONSTRUCTION"
+          matTooltipHideDelay="1000"
           (click)="toggleTheme()"
           class="relative h-4 w-8 rounded-full"
           [ngClass]="{
@@ -33,7 +41,12 @@
             }"
           ></div>
         </button>
-        <img src="/assets/icons/icon/RedHat.svg" width="28px " />
+        <img
+          (click)="chooseTheme('red')"
+          class="cursor-pointer"
+          src="/assets/icons/icon/RedHat.svg"
+          width="28px "
+        />
       </div>
     </div>
 

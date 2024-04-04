@@ -11,7 +11,7 @@ export class ThemeService {
   }
 
   setTheme(isDarkRedTheme: boolean): void {
-    console.log('isDarkRedTheme', isDarkRedTheme);
+    // console.log('isDarkRedTheme', isDarkRedTheme);
     this.darkRedTheme = isDarkRedTheme;
 
     if (isDarkRedTheme) {
