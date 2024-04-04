@@ -9,6 +9,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
+import { ThemeService } from './service/theme.service';
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -23,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatSlideToggleModule,
     MatSortModule,
     MatIconModule,
+    MatTooltipModule
   ],
   exports: [
     TranslateModule,

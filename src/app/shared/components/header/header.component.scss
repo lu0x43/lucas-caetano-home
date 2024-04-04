@@ -12,6 +12,13 @@
   @apply absolute -right-1 -top-1 h-5 w-5 rounded-full bg-gray-3;
 }
 
+.light-blue {
+  @apply absolute -left-1 -top-0.5 h-5 w-5 rounded-full bg-blue-2;
+}
+.dark-red {
+  @apply absolute -right-1 -top-0.5 h-5 w-5 rounded-full bg-red-2;
+}
+
 .role-span {
   @apply flex overflow-hidden text-red-1 xs:text-sm xs:font-400 md:text-3xl md:font-700;
 }
@@ -29,8 +36,4 @@
   50% {
     opacity: 1;
   }
-}
-
-.toggle-theme {
-  @apply absolute bottom-6 flex gap-2;
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from 'src/app/core/services/authenticator/authservice.service';
+import { ThemeService } from '../../service/theme.service';
+
 
 @Component({
   selector: 'app-header',
@@ -9,27 +11,37 @@ import { AuthService } from 'src/app/core/services/authenticator/authservice.ser
 })
 export class HeaderComponent implements OnInit {
   toggleMenu = false;
-  nameHeader = 'Lucas Caetano';
+  readonly nameHeader = 'Lucas Caetano';
 
-  isDarkTheme = true;
+  isDarkRedTheme = true;
 
   rolesHeader: string[] = ['ROLES.WEB_DEV', 'ROLES.MOBILE_DEV'];
   currentRoleIndex: number = 0;
   currentRole: string = '';
+
   private readonly TYPE_INTERVAL = 100;
   private readonly DELETE_INTERVAL = 50;
 
   constructor(
     public translateService: TranslateService,
-    private authenticationService: AuthService
+    private authenticationService: AuthService,
+    private themeService: ThemeService,
   ) {}
 
   ngOnInit(): void {
     this.typeWriter();
+    this.themeService.setTheme(this.isDarkRedTheme);
   }
 
   toggleTheme(): void {
-    this.isDarkTheme = !this.isDarkTheme;
+    // this.isDarkRedTheme = !this.isDarkRedTheme; //todo: when feature theme is already
+    this.isDarkRedTheme = true;
+    this.themeService.setTheme(this.isDarkRedTheme);
+  }
+
+  chooseTheme(theme: string): void {
+    if (theme === 'red') this.isDarkRedTheme = true;
+    if (theme === 'blue') this.isDarkRedTheme = false;
   }
 
   changeLang(): void {

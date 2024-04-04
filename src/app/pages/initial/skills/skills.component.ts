@@ -5,8 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent implements OnInit {
-  habilities: string[] = [
+export class SkillsComponent {
+  readonly habilities: string[] = [
     'c-language',
     'angular',
     'react',
@@ -22,10 +22,9 @@ export class SkillsComponent implements OnInit {
     'windows',
     'linux',
   ];
-  learning: string[] = [
+
+  readonly learning: string[] = [
     'mysql',
-    'redhat',
+    'csharp'
   ];
-  constructor() {}
-  ngOnInit(): void {}
 }

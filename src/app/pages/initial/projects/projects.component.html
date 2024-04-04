@@ -1,21 +1,19 @@
-<div class="w-full h-auto flex flex-col justify-center items-start">
+<div class="flex h-auto w-full flex-col items-start justify-center">
   <h2>
-    {{ 'PROJECTS.TITLE' | translate }}
+    {{ "PROJECTS.TITLE" | translate }}
   </h2>
   <section>
-    <p class="text-red-2 font-700">{{ 'CONSTRUCTION' | translate }}</p>
-    <div class="hidden
-     flex justify-center md:gap-40 xs:gap-10  items-center w-full flex-wrap">
+    <p class="font-700 text-red-2">{{ "CONSTRUCTION" | translate }}</p>
+    <div
+      class="flex hidden w-full flex-wrap items-center justify-center xs:gap-10 md:gap-40"
+    >
       <ng-container *ngFor="let p of projects">
-        <div
-          class="card"
-          [ngStyle]="{ 'box-shadow': shadowStyle(p.color) }"
-        >
-          <div class="w-full h-full flex justify-center items-center relative">
+        <div class="card" [ngStyle]="{ 'box-shadow': shadowStyle(p.color) }">
+          <div class="relative flex h-full w-full items-center justify-center">
             <div></div>
 
             <div
-              class="flex w-full justify-evenly self-end absolute bottom-2 px-2"
+              class="absolute bottom-2 flex w-full justify-evenly self-end px-2"
               [ngClass]="{ 'align-right': p.tecnologies.length === 1 }"
             >
               <ng-container *ngFor="let icon of p.tecnologies">

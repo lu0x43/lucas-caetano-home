@@ -62,24 +62,20 @@ module.exports = {
         1: "#A10DCB",
       },
       blue: {
-        DEFAULT: "#053768",
+        DEFAULT: "#347FC7",
         1: "#3D5A91",
-        2: "#347FC7",
+        2: "#053768",
       },
       yellow: {
-        DEFAULT: "#FDC600",
-        1: "#fedd66",
-        2: "#fee899",
-        3: "#fff4cc",
+        DEFAULT:  "#FEDD66",
+        1: "#FDC600",
+      },
+      beige: {
+        DEFAULT: "#fff4cc",
+        1: "#fee899",
       },
       orange: {
         DEFAULT: "#F18700",
-      },
-      green: {
-        DEFAULT: "#95C11F",
-        1: "#7e9934",
-        2: "#27AE60",
-        3: "#40CD28",
       },
       red: {
         DEFAULT: "#EE5B4A",
