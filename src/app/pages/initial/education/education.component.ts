@@ -30,9 +30,19 @@ export class EducationComponent implements OnInit, OnDestroy {
       subTitle: 'EDUCATION.UH',
       date: 'EDUCATION.DATE_UH',
       text: 'EDUCATION.UH_TXT',
-      link: 'https://hackingnaweb.com/',
+      link: 'https://universidadesegurancainformacao.club.hotmart.com/',
+    },
+    {
+      subTitle: 'Do Bug ao Bounty - Pato Academy',
+      date: 'O Momento | The Moment',
+      text: 'Bug Bounty Technicals Skills',
+      link: 'https://app.pato.academy/',
     },
   ];
+
+  titleCertify = 'Cerficados';
+  certificateArray: Timeline[] = [];
+
   translatedData: Timeline[] = [];
   private langChangeSubscription: any;
 
