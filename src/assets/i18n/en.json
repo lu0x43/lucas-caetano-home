@@ -51,7 +51,7 @@
 
     "DTT": "Deloitte Touche Tohmatsu",
     "DTT_DATE": "november 2023 - present",
-    "DTT_TXT": "Front-End Developer at Deloitte, led the development of new features for an internal project targeting external clients. Successfully migrated the project from Razor JavaScript to the Angular framework with TypeScript. Bug fixes in a production environment. Advanced use of Angular, Angular Material, RxJs to ensure secure, responsive development aligned with best practices.",
+    "DTT_TXT": "Front-End and Mobile Developer at Deloitte, where I led the development of new features for internal projects aimed at external clients. Successfully migrated a project from Razor JavaScript to the Angular framework with TypeScript, leveraging microfrontend practices due to the project's scale. I also resolved production bugs using advanced skills in Angular, Angular Material, and RxJS, ensuring development was secure, responsive, and aligned with best practices. Additionally, I contributed to a project using React Native, where I managed the API in C# & .NET and developed offline functionalities in the application, utilizing local storage with SQLite.",
 
     "FREELANCER": "Freelancer",
     "DATE_FREELANCER": "since 2023",
