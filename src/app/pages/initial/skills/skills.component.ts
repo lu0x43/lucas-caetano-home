@@ -14,8 +14,8 @@ export class SkillsComponent {
     'typescript',
     'csharp',
     'dotnet',
-    'sass',
-    'tailwindcss',
+    // 'sass',
+    // 'tailwindcss',
     'nodejs',
     'git',
     'windows',
@@ -23,6 +23,7 @@ export class SkillsComponent {
   ];
 
   readonly learning: string[] = [
+    'rust',
     'mysql',
   ];
 }
