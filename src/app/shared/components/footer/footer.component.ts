@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   info = {
     linkedin: 'https://www.linkedin.com/in/dev-lucascaetano/',
-    github: 'https://github.com/devLucasCaetano',
+    github: 'https://github.com/lu0x43',
     instagram: 'https://www.instagram.com/lucascaetano.dev/',
   };
 
