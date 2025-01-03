@@ -12,12 +12,11 @@ export class SkillsComponent {
     'react',
     'javascript',
     'typescript',
-    // 'html5',
-    // 'css3',
+    'csharp',
+    'dotnet',
     'sass',
     'tailwindcss',
     'nodejs',
-    // 'mongodb',
     'git',
     'windows',
     'linux',
@@ -25,7 +24,5 @@ export class SkillsComponent {
 
   readonly learning: string[] = [
     'mysql',
-    'csharp',
-    'DotNET'
   ];
 }

@@ -33,10 +33,10 @@ export class EducationComponent implements OnInit, OnDestroy {
       link: 'https://universidadesegurancainformacao.club.hotmart.com/',
     },
     {
-      subTitle: 'Do Bug ao Bounty - Pato Academy',
-      date: 'O Momento | The Moment',
-      text: 'Bug Bounty Technicals Skills',
-      link: 'https://app.pato.academy/',
+      subTitle: 'Introdução ao Pentest - DESEC SECURITY',
+      date: '05/2024',
+      text: 'Certificado KCGM-ECJUH-LFHN ',
+      link: 'https://desecsecurity.com/valida-certificado/KCGM-ECJUH-LFHN',
     },
   ];
 
