@@ -36,7 +36,7 @@ export class EducationComponent implements OnInit, OnDestroy {
       subTitle: 'Introdução ao Pentest - DESEC SECURITY',
       date: '05/2024',
       text: 'Certificado KCGM-ECJUH-LFHN ',
-      link: 'https://desecsecurity.com/valida-certificado/KCGM-ECJUH-LFHN',
+      link: 'https://academy.desecsecurity.com/certificado/KCGM-ECJUH-LFHN',
     },
   ];
 
