@@ -25,5 +25,6 @@ export class SkillsComponent {
   readonly learning: string[] = [
     'rust',
     'mysql',
+    'redhat'
   ];
 }
