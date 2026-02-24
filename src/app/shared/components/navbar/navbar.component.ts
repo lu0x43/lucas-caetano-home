@@ -19,9 +19,7 @@ export class NavbarComponent implements OnInit {
 
   openMenu: boolean = false;
 
-  constructor(
-    private viewPortScroller: ViewportScroller,
-  ) {}
+  constructor(private viewPortScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
 
@@ -30,15 +28,9 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollComponent(page: string): void {
-    this.nameScroll = page.split('.');
-    this.nameScroll.shift();
-    this.nameScroll = this.nameScroll.map((element) => {
-      return element.toLowerCase();
-    });
-
-    this.nameScroll.forEach((element) => {
-      this.viewPortScroller.scrollToAnchor(element);
-    });
+    const sectionId = page.split('.')[1].toLowerCase();
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
 
     this.openMenu = false;
   }

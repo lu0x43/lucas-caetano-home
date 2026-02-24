@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import {ChangeDetectorRef, Component, OnChanges, OnInit} from '@angular/core';
 import { ThemeService } from '../../shared/service/theme.service';
 
@@ -10,7 +9,6 @@ import { ThemeService } from '../../shared/service/theme.service';
 export class InitialComponent implements OnInit, OnChanges {
   themeDarkRed = false;
   constructor(
-    private viewPortScroller: ViewportScroller,
     private themeService: ThemeService,
     private cdr: ChangeDetectorRef
   ) {
@@ -34,6 +32,6 @@ export class InitialComponent implements OnInit, OnChanges {
   }
 
   backToTop(): void {
-    this.viewPortScroller.scrollToPosition([0, 0]);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
