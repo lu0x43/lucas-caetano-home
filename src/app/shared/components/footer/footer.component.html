@@ -17,6 +17,16 @@
 
           <div class="flex flex-col items-center xs:gap-1 md:gap-2">
             <div class="contact">
+              <a
+                [href]="info.whatsapp"
+                target="_blank"
+                class="hover:text-blue"
+              >
+                {{ "FOOTER.WHATSAPP" | translate }}
+              </a>
+            </div>
+
+            <div class="contact">
               <a [href]="info.linkedin" target="_blank" class="hover:text-blue">
                 {{ "FOOTER.LINKEDIN" | translate }}
               </a>

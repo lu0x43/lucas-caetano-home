@@ -10,6 +10,8 @@ export class FooterComponent implements OnInit {
     linkedin: 'https://www.linkedin.com/in/dev-lucascaetano/',
     github: 'https://github.com/lu0x43',
     instagram: 'https://www.instagram.com/lucascaetano.dev/',
+    whatsapp: 'https://wa.me/5517920047172',
+    // email:
   };
 
   constructor() {}
